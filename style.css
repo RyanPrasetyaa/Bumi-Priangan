@@ -1,0 +1,25 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 5%;
+    background: seagreen;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
