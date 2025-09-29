@@ -1,6 +1,9 @@
 const nextBtn = document.querySelector(".next-btn");
 const prevBtn = document.querySelector(".prev-btn");
-const slides = document.querySelectorAll(".slides");
+const slides = document.querySelectorAll(".slide");
+const searchInput = document.getElementById("searchInput");
+const articlesList = document.getElementById("articlesList");
+const cards = articlesList.getElementsByClassName("card");
 const numberOfSlides = slides.length;
 let slideNumber = 0;
 
@@ -31,3 +34,20 @@ prevBtn.onclick = () => {
 
   slides[slideNumber].classList.add("active");
 };
+
+searchInput.addEventListener("keyup", function () {
+  const filter = searchInput.value.toLowerCase();
+
+  // Loop semua card
+  Array.from(cards).forEach(card => {
+    const title = card.querySelector("h3").textContent.toLowerCase();
+    const description = card.querySelector("p").textContent.toLowerCase();
+
+    // Jika teks cocok dengan judul atau deskripsi → tampilkan
+    if (title.includes(filter) || description.includes(filter)) {
+      card.style.display = "";
+    } else {
+      card.style.display = "none";
+    }
+  });
+});
