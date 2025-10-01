@@ -14,6 +14,10 @@ html {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+/* Container utama */
+>>>>>>> Stashed changes
 =======
 /* Container utama */
 >>>>>>> Stashed changes
@@ -29,6 +33,10 @@ html {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+/* Gambar latar */
+>>>>>>> Stashed changes
 =======
 /* Gambar latar */
 >>>>>>> Stashed changes
@@ -45,6 +53,10 @@ html {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+/* Bar atas: logo + ikon */
+>>>>>>> Stashed changes
 =======
 /* Bar atas: logo + ikon */
 >>>>>>> Stashed changes
@@ -68,8 +80,13 @@ html {
 .social-icons {
   display: flex;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   gap: 1.2rem;
   margin-left: 40px;
+=======
+  gap: 1.2rem; /* ✅ jarak antar ikon */
+  margin-left: 40px; /* kalau mau dorong ke kanan */
+>>>>>>> Stashed changes
 =======
   gap: 1.2rem; /* ✅ jarak antar ikon */
   margin-left: 40px; /* kalau mau dorong ke kanan */
@@ -91,6 +108,10 @@ html {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+/* Konten utama */
+>>>>>>> Stashed changes
 =======
 /* Konten utama */
 >>>>>>> Stashed changes
@@ -123,6 +144,10 @@ html {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+/* Tombol CTA */
+>>>>>>> Stashed changes
 =======
 /* Tombol CTA */
 >>>>>>> Stashed changes
@@ -145,6 +170,10 @@ html {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+/* Animasi masuk */
+>>>>>>> Stashed changes
 =======
 /* Animasi masuk */
 >>>>>>> Stashed changes
