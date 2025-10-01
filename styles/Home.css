@@ -13,6 +13,10 @@ html {
   background-color: #000;
 }
 
+<<<<<<< Updated upstream
+=======
+/* Container utama */
+>>>>>>> Stashed changes
 .intro-container {
   position: relative;
   height: 100vh;
@@ -24,6 +28,10 @@ html {
   justify-content: center;
 }
 
+<<<<<<< Updated upstream
+=======
+/* Gambar latar */
+>>>>>>> Stashed changes
 .bg-image {
   position: absolute;
   top: 0;
@@ -36,6 +44,10 @@ html {
   z-index: 0;
 }
 
+<<<<<<< Updated upstream
+=======
+/* Bar atas: logo + ikon */
+>>>>>>> Stashed changes
 .top-bar {
   position: fixed;
   top: 0;
@@ -55,8 +67,13 @@ html {
 
 .social-icons {
   display: flex;
+<<<<<<< Updated upstream
   gap: 1.2rem;
   margin-left: 40px;
+=======
+  gap: 1.2rem; /* ✅ jarak antar ikon */
+  margin-left: 40px; /* kalau mau dorong ke kanan */
+>>>>>>> Stashed changes
   align-items: center;
 }
 
@@ -73,6 +90,10 @@ html {
   gap: 1.2rem;
 }
 
+<<<<<<< Updated upstream
+=======
+/* Konten utama */
+>>>>>>> Stashed changes
 .content {
   position: relative;
   z-index: 2;
@@ -101,6 +122,10 @@ html {
   opacity: 0.9;
 }
 
+<<<<<<< Updated upstream
+=======
+/* Tombol CTA */
+>>>>>>> Stashed changes
 .btn {
   background-color: #ffcc00;
   color: #000;
@@ -119,6 +144,10 @@ html {
   background-color: #e6b800;
 }
 
+<<<<<<< Updated upstream
+=======
+/* Animasi masuk */
+>>>>>>> Stashed changes
 @keyframes fadeIn {
   from {
     opacity: 0;
