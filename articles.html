@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artikel - Bumi Priangan</title>
+  <link rel="stylesheet" href="styles/stylearticles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Header Navbar -->
+  <header class="header">
+    <a href="home.html" class="logo">
+      <img src="assets/BUMI-PRIANGAN.png" alt="BUMI PRIANGAN" width="230" />
+    </a>
+
+    <div class="social-media">
+      <a href="#"><i><img src="assets/instagram.png" alt="Instagram" width="30" /></i></a>
+      <a href="#"><i><img src="assets/github.png" alt="Github" width="30" /></i></a>
+      <a href="#"><i><img src="assets/mail.png" alt="Email" width="30" /></i></a>
+    </div>
+
+    <nav class="navbar">
+      <a href="home.html">Beranda</a>
+      <a href="articles.html" class="active">Artikel</a>
+      <a href="about.html">Tentang</a>
+      <a href="favorite.html">Favorit</a>
+    </nav>
+  </header>
+
+  <!-- Section Header Artikel -->
+  <section class="articles-header">
+    <h1>Semua Artikel</h1>
+    <input type="text" id="searchInput" placeholder="Cari artikel..." />
+    <div id="filterButtons">
+      <button data-city="all">Semua</button>
+      <button data-city="Bandung">Bandung</button>
+      <button data-city="Cirebon">Cirebon</button>
+      <button data-city="Bekasi">Bekasi</button>
+    </div>
+  </section>
+
+  <!-- Container Artikel -->
+  <main id="articlesContainer"></main>
+
+  <script src="scripts/scriptarticles.js"></script>
+</body>
+</html>

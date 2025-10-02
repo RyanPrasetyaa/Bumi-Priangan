@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #231c07;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 5%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+
+.social-media {
+  margin: 0 auto 0 50px;
+}
+
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.social-media a:hover {
+  background: #fff;
+}
+
+.social-media a i {
+  font-size: 20px;
+  color: #fff;
+}
+
+.social-media a:hover i {
+  color: #444;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 30px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a:hover,
+.navbar a.active {
+  text-decoration: underline;
+}
+
+/* --- Artikel Detail --- */
+main {
+  max-width: 800px;
+  margin: 140px auto 40px auto; /* jarak biar gak ketutup navbar */
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+main img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+main h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #004d40;
+}
+
+main p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* Style tombol favorit */
+#favBtn {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+/* Belum difavoritkan → hijau */
+#favBtn.add {
+  background: #2e7d32;
+  color: white;
+}
+
+#favBtn.add:hover {
+  background: #1b5e20;
+}
+
+/* Sudah difavoritkan → merah */
+#favBtn.remove {
+  background: #c62828;
+  color: white;
+}
+
+#favBtn.remove:hover {
+  background: #8e0000;
+}
+
+/* Toast notification */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(50px);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  opacity: 0;
+  transition: all 0.4s ease;
+  z-index: 9999;
+}
+
+/* Animasi muncul */
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Warna beda */
+.toast.add {
+  background: #2e7d32; /* hijau */
+}
+
+.toast.remove {
+  background: #c62828; /* merah */
+}

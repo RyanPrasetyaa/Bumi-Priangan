@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Asal Usul Nama Bandung",
+    "city": "Bandung",
+    "content": "Menurut cerita rakyat, nama Bandung berasal dari kata 'Bandung' yang dihubungkan dengan peristiwa terbentuknya danau akibat letusan Gunung Tangkuban Parahu.",
+    "image": "assets/bandung.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Sejarah Kota Cirebon",
+    "city": "Cirebon",
+    "content": "Nama Cirebon berasal dari kata Ci (air) dan Rebon (udang kecil), karena dahulu masyarakat setempat banyak menangkap rebon di sungai-sungai.",
+    "image": "assets/cirebon.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Bekasi dari Masa ke Masa",
+    "city": "Bekasi",
+    "content": "Nama Bekasi berasal dari kata 'Candrabaga' yang tercatat dalam Prasasti Tugu. Candrabaga sendiri berarti sungai yang bersinar.",
+    "image": "assets/bekasi.jpg"
+  }
+]
