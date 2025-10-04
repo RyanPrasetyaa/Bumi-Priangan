@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kota - BUMI PRIANGAN</title>
+  <link rel="stylesheet" href="styles/stylecity.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <a href="home.html" class="logo">
+      <img src="assets/BUMI-PRIANGAN.png" alt="BUMI PRIANGAN" width="230" />
+    </a>
+
+    <div class="social-media">
+      <a href="#"><img src="assets/instagram.png" alt="Instagram" width="30" /></a>
+      <a href="#"><img src="assets/github.png" alt="Github" width="30" /></a>
+      <a href="#"><img src="assets/mail.png" alt="Email" width="30" /></a>
+    </div>
+
+    <nav class="navbar">
+      <a href="home.html">Beranda</a>
+      <a href="articles.html">Artikel</a>
+      <a href="about.html">Tentang</a>
+      <a href="favorite.html">Favorit</a>
+    </nav>
+  </header>
+
+  <!-- ===== KONTEN KOTA ===== -->
+  <main class="city-page">
+    <!-- Banner (judul akan tampil di overlay banner) -->
+    <section class="city-banner" id="cityBanner"></section>
+
+    <!-- Deskripsi -->
+    <section class="city-info" id="cityInfo"></section>
+
+    <!-- Artikel terkait -->
+    <section class="city-articles">
+      <h2>Artikel tentang kota ini</h2>
+      <div id="cityArticles" class="articles-list"></div>
+    </section>
+  </main>
+
+  <script src="scripts/scriptcity.js"></script>
+</body>
+</html>
