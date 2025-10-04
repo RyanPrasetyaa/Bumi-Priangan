@@ -24,6 +24,7 @@ function renderFavorites(data) {
       <p><strong>${article.city}</strong></p>
       <p>${article.content.substring(0, 100)}...</p>
       <button onclick="removeFavorite(${article.id})">Hapus Favorit</button>
+      <a href="article-detail.html?id=${article.id}" class="detail-link">Baca Selengkapnya</a>
     `;
     container.appendChild(card);
   });
@@ -32,5 +33,12 @@ function renderFavorites(data) {
 function removeFavorite(id) {
   favorites = favorites.filter((fav) => fav !== id);
   localStorage.setItem("favorites", JSON.stringify(favorites));
-  location.reload();
+
+  // Render ulang tanpa reload
+  fetch("data/articles.json")
+    .then((res) => res.json())
+    .then((articles) => {
+      const favArticles = articles.filter((a) => favorites.includes(a.id));
+      renderFavorites(favArticles);
+    });
 }

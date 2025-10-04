@@ -2,7 +2,7 @@
 const params = new URLSearchParams(window.location.search);
 const articleId = parseInt(params.get("id"));
 
-// Ambil daftar favorit dari localStorage
+// Ambil daftar favorit dari localStorage (array of id)
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
 fetch("data/articles.json")
@@ -10,9 +10,13 @@ fetch("data/articles.json")
   .then((articles) => {
     const article = articles.find((a) => a.id === articleId);
     if (!article) {
-      document.getElementById("articleDetail").innerHTML = "<p>Artikel tidak ditemukan.</p>";
+      document.getElementById("articleDetail").innerHTML =
+        "<p>Artikel tidak ditemukan.</p>";
       return;
     }
+
+    // Cek apakah artikel sudah difavoritkan
+    const isFavorited = favorites.includes(article.id);
 
     // Render artikel lengkap
     document.getElementById("articleDetail").innerHTML = `
@@ -21,8 +25,8 @@ fetch("data/articles.json")
         <h1>${article.title}</h1>
         <p><strong>Kota: ${article.city}</strong></p>
         <p>${article.content}</p>
-        <button id="favBtn" class="${favorites.includes(article.id) ? "remove" : "add"}">
-          ${favorites.includes(article.id) ? "Hapus dari Favorit" : "Tambah ke Favorit"}
+        <button id="favBtn" class="${isFavorited ? "remove" : "add"}">
+          ${isFavorited ? "Hapus dari Favorit" : "Tambah ke Favorit"}
         </button>
         <br><br>
         <a href="articles.html" class="back-btn">← Kembali</a>
@@ -34,24 +38,30 @@ fetch("data/articles.json")
     favBtn.addEventListener("click", () => {
       let message = "";
       let type = "";
+
       if (favorites.includes(article.id)) {
-        favorites = favorites.filter((fav) => fav !== article.id);
+        // Hapus dari favorit
+        favorites = favorites.filter((favId) => favId !== article.id);
         message = "Dihapus dari Favorit";
         type = "remove";
       } else {
+        // Tambah ke favorit
         favorites.push(article.id);
         message = "Ditambahkan ke Favorit";
         type = "add";
       }
+
+      // Simpan ke localStorage
       localStorage.setItem("favorites", JSON.stringify(favorites));
 
       // Update tampilan tombol
-      favBtn.textContent = favorites.includes(article.id)
+      const isNowFav = favorites.includes(article.id);
+      favBtn.textContent = isNowFav
         ? "Hapus dari Favorit"
         : "Tambah ke Favorit";
-      favBtn.className = favorites.includes(article.id) ? "remove" : "add";
+      favBtn.className = isNowFav ? "remove" : "add";
 
-      // Tampilkan toast dengan warna sesuai
+      // Tampilkan toast
       showToast(message, type);
     });
   });
