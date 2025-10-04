@@ -23,7 +23,10 @@ fetch("data/articles.json")
       <div class="article-full">
         <img src="${article.image}" alt="${article.title}" />
         <h1>${article.title}</h1>
-        <p><strong>Kota: ${article.city}</strong></p>
+        <p class="article-meta">
+          <span class="date">${article.date}</span> • 
+          <span class="city">${article.city}</span>
+        </p>
         <p>${article.content}</p>
         <button id="favBtn" class="${isFavorited ? "remove" : "add"}">
           ${isFavorited ? "Hapus dari Favorit" : "Tambah ke Favorit"}

@@ -156,3 +156,19 @@ main p {
 .toast.remove {
   background: #c62828; /* merah */
 }
+
+.article-meta {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.article-meta .date {
+  color: #555;
+  font-weight: 500;
+}
+
+.article-meta .city {
+  color: #004d40;
+  font-weight: 600;
+}
