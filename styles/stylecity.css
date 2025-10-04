@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #231c07;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 5%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+
+.social-media {
+  margin: 0 auto 0 50px;
+}
+
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  /* border: 2px solid #fff; */
+  border-radius: 6px;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.social-media a:hover {
+  background: #fff;
+}
+
+.social-media a i {
+  font-size: 20px;
+  color: #fff;
+}
+
+.social-media a:hover i {
+  color: #444;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 30px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a:hover,
+.navbar a.active {
+  text-decoration: underline;
+}
+
+/* ===== CITY BANNER ===== */
+.city-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* full screen */
+  overflow: hidden;
+}
+
+.banner-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* parallax effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55); /* overlay full hitam transparan */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.banner-overlay h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+/* Fade in animasi */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== CITY INFO ===== */
+.city-info {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.city-section {
+  margin-bottom: 40px;
+}
+
+.city-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffd369;
+}
+
+.city-section p {
+  line-height: 1.7;
+  color: #fff;
+  text-align: justify;
+}
+
+/* ===== CITY ARTICLES ===== */
+.city-articles {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.city-articles h2 {
+  color: #ffd369;
+}
+
+.articles-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* lebih kecil */
+  gap: 20px;
+}
+
+.article-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-card img {
+  width: 100%;
+  height: 140px; /* lebih kecil dari sebelumnya 180px */
+  object-fit: cover;
+}
+
+.article-card-body {
+  padding: 12px; /* lebih kecil */
+}
+
+.article-card-body h3 {
+  font-size: 1rem;
+  margin: 8px 0;
+  color: #222;
+}
+
+.article-card-body p {
+  color: #666;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.article-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.articles-list .article-card:nth-child(n+4) {
+  display: none;
+}

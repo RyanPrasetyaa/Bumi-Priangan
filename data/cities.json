@@ -1,0 +1,40 @@
+[
+  {
+    "id": "bandung",
+    "name": "Bandung",
+    "banner": "assets/bandung.jpg",
+    "sections": [
+      {
+        "title": "🏞 Asal-usul Nama Bandung",
+        "content": "Nama Bandung diyakini berasal dari kata bendungan atau bandung (bahasa Sunda: ngabandungan = berjejer dua). Ada kaitan erat dengan terbentuknya Danau Purba Bandung, sekitar 50.000–20.000 tahun lalu, ketika aliran Sungai Citarum terhalang lava Gunung Tangkuban Parahu sehingga terbentuk danau besar di cekungan Bandung."
+      },
+      {
+        "title": "🏛 Perkembangan Sejarah Bandung",
+        "content": "Pada masa kerajaan, wilayah Bandung merupakan bagian dari kerajaan-kerajaan Sunda kuno. Tahun 1810, Gubernur Jenderal Belanda Herman Willem Daendels memindahkan pusat pemerintahan Kabupaten Bandung ke tepi Jalan Raya Pos. Awal abad ke-20, Bandung dijuluki 'Parijs van Java' karena tata kotanya yang modern."
+      },
+      {
+        "title": "👥 Masyarakat Bandung",
+        "content": "Mayoritas masyarakat Bandung adalah etnis Sunda. Kini Bandung berkembang pesat dengan masyarakat multikultural dan menjadi pusat industri kreatif, pariwisata, pendidikan, dan teknologi."
+      }
+    ]
+  },
+  {
+    "id": "cirebon",
+    "name": "Cirebon",
+    "banner": "assets/cirebon.jpg",
+    "sections": [
+      {
+        "title": "🏞 Asal-usul Nama Cirebon",
+        "content": "Nama Cirebon diyakini berasal dari kata 'caruban' yang berarti campuran, mencerminkan percampuran budaya Sunda, Jawa, Arab, dan Tionghoa di wilayah ini."
+      },
+      {
+        "title": "🏛 Perkembangan Sejarah Cirebon",
+        "content": "Cirebon berkembang sebagai kota pelabuhan penting di pantai utara Jawa. Kesultanan Cirebon berdiri pada abad ke-15 dan menjadi pusat penyebaran Islam di Jawa Barat."
+      },
+      {
+        "title": "👥 Masyarakat Cirebon",
+        "content": "Masyarakat Cirebon multikultur dengan tradisi khas seperti batik mega mendung, tarling, dan upacara adat kasepuhan. Ekonomi berkembang dari perdagangan, batik, hingga pariwisata."
+      }
+    ]
+  }
+]

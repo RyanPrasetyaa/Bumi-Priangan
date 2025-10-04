@@ -3,21 +3,48 @@
     "id": 1,
     "title": "Asal Usul Nama Bandung",
     "city": "Bandung",
-    "content": "Menurut cerita rakyat, nama Bandung berasal dari kata 'Bandung' yang dihubungkan dengan peristiwa terbentuknya danau akibat letusan Gunung Tangkuban Parahu.",
+    "date": "12 September 2025",
+    "content": "Menurut cerita rakyat, nama Bandung berasal dari kata 'Bandung' yang dihubungkan dengan peristiwa terbentuknya danau akibat letusan Gunung Tangkuban Parahu. Kata Bandung juga diyakini berasal dari kata bendungan, karena terbentuknya Danau Purba Bandung yang membendung aliran Sungai Citarum.",
     "image": "assets/bandung.jpg"
   },
   {
     "id": 2,
     "title": "Sejarah Kota Cirebon",
     "city": "Cirebon",
-    "content": "Nama Cirebon berasal dari kata Ci (air) dan Rebon (udang kecil), karena dahulu masyarakat setempat banyak menangkap rebon di sungai-sungai.",
+    "date": "18 September 2025",
+    "content": "Nama Cirebon berasal dari kata Ci (air) dan Rebon (udang kecil), karena dahulu masyarakat setempat banyak menangkap rebon di sungai-sungai. Kota ini kemudian berkembang menjadi pusat perdagangan dan penyebaran Islam melalui Kesultanan Cirebon.",
     "image": "assets/cirebon.jpg"
   },
   {
     "id": 3,
     "title": "Bekasi dari Masa ke Masa",
     "city": "Bekasi",
-    "content": "Nama Bekasi berasal dari kata 'Candrabaga' yang tercatat dalam Prasasti Tugu. Candrabaga sendiri berarti sungai yang bersinar.",
+    "date": "22 September 2025",
+    "content": "Nama Bekasi berasal dari kata 'Candrabaga' yang tercatat dalam Prasasti Tugu. Candrabaga sendiri berarti sungai yang bersinar. Seiring waktu, Candrabaga berubah menjadi Bhagasasi dan akhirnya dikenal sebagai Bekasi.",
     "image": "assets/bekasi.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Gedung Sate: Ikon Bandung",
+    "city": "Bandung",
+    "date": "25 September 2025",
+    "content": "Gedung Sate merupakan bangunan bersejarah di Bandung yang dibangun pada masa kolonial Belanda tahun 1920. Arsitekturnya bergaya Indo-Eropa dengan ornamen tusuk sate di puncaknya. Kini Gedung Sate menjadi kantor Gubernur Jawa Barat sekaligus ikon wisata sejarah.",
+    "image": "assets/gedungsate.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Keraton Kasepuhan Cirebon",
+    "city": "Cirebon",
+    "date": "27 September 2025",
+    "content": "Keraton Kasepuhan adalah keraton tertua di Cirebon yang berdiri sejak abad ke-15. Bangunannya memadukan unsur arsitektur Jawa, Islam, Tionghoa, hingga Eropa. Keraton ini menjadi pusat budaya dan sejarah Cirebon hingga sekarang.",
+    "image": "assets/keratoncirebon.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Peristiwa Dayeuh Kolot",
+    "city": "Bandung",
+    "date": "27 September 2025",
+    "content": "Keraton Kasepuhan adalah keraton tertua di Cirebon yang berdiri sejak abad ke-15. Bangunannya memadukan unsur arsitektur Jawa, Islam, Tionghoa, hingga Eropa. Keraton ini menjadi pusat budaya dan sejarah Cirebon hingga sekarang.",
+    "image": "assets/keratoncirebon.jpg"
   }
 ]

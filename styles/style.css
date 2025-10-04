@@ -57,6 +57,11 @@
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.navbar a:hover,
+.navbar a.active {
+  text-decoration: underline;
+}
+
 .banner {
   position: relative;
   width: 100%;
