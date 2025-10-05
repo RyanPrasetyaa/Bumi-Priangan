@@ -1,26 +1,31 @@
 let articles = [];
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+let currentIndex = 0;
+const perPage = 20;
 
 const container = document.getElementById("articlesContainer");
 const searchInput = document.getElementById("searchInput");
 const filterButtons = document.querySelectorAll("#filterButtons button");
+const loadMoreBtn = document.getElementById("loadMoreBtn");
 
 // Fetch data dari JSON
 fetch("data/articles.json")
   .then((res) => res.json())
   .then((data) => {
     articles = data;
-    renderArticles(articles);
+    renderArticles(articles, true); // true = reset container
   });
 
-function renderArticles(data) {
-  container.innerHTML = "";
-  if (data.length === 0) {
-    container.innerHTML = "<p>Tidak ada artikel ditemukan.</p>";
-    return;
+// Fungsi render artikel dengan paging
+function renderArticles(data, reset = false) {
+  if (reset) {
+    container.innerHTML = "";
+    currentIndex = 0;
   }
 
-  data.forEach((article) => {
+  const slice = data.slice(currentIndex, currentIndex + perPage);
+
+  slice.forEach((article) => {
     const card = document.createElement("div");
     card.classList.add("article-card");
 
@@ -34,9 +39,8 @@ function renderArticles(data) {
       </button>
     `;
 
-    // Biar bisa klik seluruh card menuju halaman detail
+    // Klik card -> detail
     card.addEventListener("click", (e) => {
-      // Supaya tombol favorit masih bisa dipencet tanpa langsung redirect
       if (e.target.tagName.toLowerCase() !== "button") {
         window.location.href = `article-detail.html?id=${article.id}`;
       }
@@ -44,6 +48,15 @@ function renderArticles(data) {
 
     container.appendChild(card);
   });
+
+  currentIndex += perPage;
+
+  // Sembunyikan tombol kalau udah habis
+  if (currentIndex >= data.length) {
+    loadMoreBtn.style.display = "none";
+  } else {
+    loadMoreBtn.style.display = "inline-block";
+  }
 }
 
 function toggleFavorite(id) {
@@ -53,8 +66,13 @@ function toggleFavorite(id) {
     favorites.push(id);
   }
   localStorage.setItem("favorites", JSON.stringify(favorites));
-  renderArticles(articles);
+  renderArticles(articles, true);
 }
+
+// Load more event
+loadMoreBtn.addEventListener("click", () => {
+  renderArticles(articles, false);
+});
 
 // Search
 searchInput.addEventListener("input", (e) => {
@@ -64,7 +82,7 @@ searchInput.addEventListener("input", (e) => {
       a.title.toLowerCase().includes(keyword) ||
       a.content.toLowerCase().includes(keyword)
   );
-  renderArticles(filtered);
+  renderArticles(filtered, true);
 });
 
 // Filter tombol kota
@@ -72,10 +90,10 @@ filterButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
     const city = btn.dataset.city;
     if (city === "all") {
-      renderArticles(articles);
+      renderArticles(articles, true);
     } else {
       const filtered = articles.filter((a) => a.city === city);
-      renderArticles(filtered);
+      renderArticles(filtered, true);
     }
   });
 });

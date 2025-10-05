@@ -11,7 +11,7 @@
   left: 0;
   width: 100%;
   padding: 30px 5%;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   z-index: 100;
@@ -57,16 +57,39 @@
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.navbar a:hover,
+.navbar a.active {
+  text-decoration: underline;
+}
+
 /* --- Bagian Artikel --- */
 .articles-header {
   text-align: center;
   padding: 140px 20px 20px; /* kasih jarak karena navbar fixed */
-  background: #555;
+  background: url("/assets/article.jpg") no-repeat center center/cover;
+  position: relative;
 }
+
+.articles-header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* lapisan gelap */
+  z-index: 0;
+}
+
+.articles-header h1,
+.articles-header input,
+#filterButtons {
+  position: relative;
+  z-index: 1; /* biar di atas overlay */
+}
+
 
 .articles-header h1 {
   margin-bottom: 15px;
-  color: #004d40;
+  color: #fff;
 }
 
 #searchInput {
@@ -98,6 +121,10 @@
 }
 
 /* --- Card Artikel --- */
+.articles-section {
+  background: #5B714D;
+}
+
 main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -209,3 +236,31 @@ main {
   text-decoration: underline;
 }
 
+/* --- Load More Button --- */
+.loadMoreWrapper {
+  text-align: center;
+}
+
+#loadMoreBtn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  background: #00695c; /* hijau tosca gelap */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  text-align: center;
+  margin: 20px 0;
+}
+
+#loadMoreBtn:hover {
+  background: #004d40; /* lebih gelap saat hover */
+  transform: translateY(-2px);
+}
+
+#loadMoreBtn:active {
+  transform: translateY(0);
+}
