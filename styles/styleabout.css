@@ -7,10 +7,10 @@
 .custom-box {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1280px;
   margin: 24px auto;
-  padding: 32px 36px;
-  border-radius: 18px;
+  padding: 64px 72px;
+  border-radius: 24px;
   color: #f5f7fa;
   background: rgba(20, 22, 26, 0.55);
   border: 1px solid transparent;
@@ -20,14 +20,13 @@
       rgba(255, 152, 0, 0.2)
     )
     1;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   overflow: hidden;
   transition: all 0.3s ease;
 }
 
-/* Motif overlay opsional */
 .custom-box::before {
   content: "";
   position: absolute;
@@ -37,15 +36,22 @@
   background-repeat: no-repeat;
   opacity: 0.035;
   pointer-events: none;
-  border-radius: 18px;
+  border-radius: 38px;
 }
 
-/* Title section */
+.custom-box p {
+  font-size: 21px; /* dari default 16–18px → jadi besar dan jelas */
+  line-height: 1.9; /* spasi antar baris lebih lega */
+  letter-spacing: -0.015em; /* sedikit rapat biar nggak terlalu renggang */
+
+  margin-bottom: 24px; /* jarak antar paragraf */
+}
+
 .title-wrapper {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 .title-addon {
@@ -54,7 +60,7 @@
   justify-content: center;
   width: 44px;
   height: 44px;
-  border-radius: 12px;
+  border-radius: 28x;
   font-size: 22px;
   background: linear-gradient(135deg, #ffd54f, #ff9800);
   color: #1b1f24;
@@ -75,14 +81,13 @@
   text-shadow: 0 2px 4px rgba(255, 193, 7, 0.2);
 }
 
-/* List styling */
 .custom-list {
   margin: 0;
   padding: 0;
   list-style: none;
   display: grid;
   gap: 16px;
-  font-size: 27px;
+  font-size: 50px;
   line-height: 1.7;
 }
 
@@ -118,7 +123,6 @@
   -webkit-backdrop-filter: blur(1px);
 }
 
-/* Header styling */
 .custom-box th {
   padding: 20px 24px;
   font-size: 24px;
@@ -129,19 +133,16 @@
   text-shadow: 0 1px 2px rgba(255, 193, 7, 0.3);
 }
 
-/* Cell styling */
 .custom-box td {
   padding: 18px 24px;
   border-bottom: 1px solid rgba(243, 198, 0, 0.1);
   color: #e0e4ec;
 }
 
-/* Last row cleanup */
 .custom-box tr:last-child td {
   border-bottom: none;
 }
 
-/* Row hover effect */
 .custom-box tr:hover td {
   background-color: rgba(255, 193, 7, 0.06);
   transition: background-color 0.3s ease;
@@ -170,7 +171,6 @@
   width: 40px;
   height: 40px;
   background: transparent;
-  /* border: 2px solid #fff; */
   border-radius: 6px;
   text-decoration: none;
   margin-right: 10px;
