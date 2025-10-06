@@ -1,170 +1,50 @@
 [
   {
     "id": 1,
-    "title": "Asal Usul Nama Bandung",
+    "title": "Mengarungi Sejarah Jalan Braga: Jantung 'Parijs van Java' yang Tak Lekang Dimakan Zaman",
     "city": "Bandung",
     "date": "12 September 2025",
-    "content": "Menurut cerita rakyat, nama Bandung berasal dari kata 'Bandung' yang dihubungkan dengan peristiwa terbentuknya danau akibat letusan Gunung Tangkuban Parahu. Kata Bandung juga diyakini berasal dari kata bendungan, karena terbentuknya Danau Purba Bandung yang membendung aliran Sungai Citarum.",
-    "image": "assets/bandung.jpg"
+    "contentFile": "articles/jalanbraga.txt",
+    "image": "assets/articles_assets/braga.jpeg"
   },
   {
     "id": 2,
-    "title": "Sejarah Kota Cirebon",
-    "city": "Cirebon",
-    "date": "18 September 2025",
-    "content": "Nama Cirebon berasal dari kata Ci (air) dan Rebon (udang kecil), karena dahulu masyarakat setempat banyak menangkap rebon di sungai-sungai. Kota ini kemudian berkembang menjadi pusat perdagangan dan penyebaran Islam melalui Kesultanan Cirebon.",
-    "image": "assets/cirebon.jpg"
+    "title": "Mengarungi Sejarah Jalan Braga: Jantung 'Parijs van Java' yang Tak Lekang Dimakan Zaman",
+    "city": "Bandung",
+    "date": "12 September 2025",
+    "contentFile": "articles/jalanbraga.txt",
+    "image": "assets/bandung.jpg"
   },
   {
     "id": 3,
-    "title": "Bekasi dari Masa ke Masa",
-    "city": "Bekasi",
-    "date": "22 September 2025",
-    "content": "Nama Bekasi berasal dari kata 'Candrabaga' yang tercatat dalam Prasasti Tugu. Candrabaga sendiri berarti sungai yang bersinar. Seiring waktu, Candrabaga berubah menjadi Bhagasasi dan akhirnya dikenal sebagai Bekasi.",
-    "image": "assets/bekasi.jpg"
+    "title": "Mengarungi Sejarah Jalan Braga: Jantung 'Parijs van Java' yang Tak Lekang Dimakan Zaman",
+    "city": "Bandung",
+    "date": "12 September 2025",
+    "contentFile": "articles/jalanbraga.txt",
+    "image": "assets/bandung.jpg"
   },
   {
     "id": 4,
-    "title": "Gedung Sate: Ikon Bandung",
+    "title": "Mengarungi Sejarah Jalan Braga: Jantung 'Parijs van Java' yang Tak Lekang Dimakan Zaman",
     "city": "Bandung",
-    "date": "25 September 2025",
-    "content": "Gedung Sate merupakan bangunan bersejarah di Bandung yang dibangun pada masa kolonial Belanda tahun 1920. Arsitekturnya bergaya Indo-Eropa dengan ornamen tusuk sate di puncaknya. Kini Gedung Sate menjadi kantor Gubernur Jawa Barat sekaligus ikon wisata sejarah.",
-    "image": "assets/gedungsate.jpg"
+    "date": "12 September 2025",
+    "contentFile": "articles/jalanbraga.txt",
+    "image": "assets/bandung.jpg"
   },
   {
     "id": 5,
-    "title": "Keraton Kasepuhan Cirebon",
-    "city": "Cirebon",
-    "date": "27 September 2025",
-    "content": "Keraton Kasepuhan adalah keraton tertua di Cirebon yang berdiri sejak abad ke-15. Bangunannya memadukan unsur arsitektur Jawa, Islam, Tionghoa, hingga Eropa. Keraton ini menjadi pusat budaya dan sejarah Cirebon hingga sekarang.",
-    "image": "assets/keratoncirebon.jpg"
+    "title": "Mengarungi Sejarah Jalan Braga: Jantung 'Parijs van Java' yang Tak Lekang Dimakan Zaman",
+    "city": "Bandung",
+    "date": "12 September 2025",
+    "contentFile": "articles/jalanbraga.txt",
+    "image": "assets/bandung.jpg"
   },
   {
     "id": 6,
-    "title": "Peristiwa Dayeuh Kolot",
+    "title": "Mengarungi Sejarah Jalan Braga: Jantung 'Parijs van Java' yang Tak Lekang Dimakan Zaman",
     "city": "Bandung",
-    "date": "27 September 2025",
-    "content": "Keraton Kasepuhan adalah keraton tertua di Cirebon yang berdiri sejak abad ke-15. Bangunannya memadukan unsur arsitektur Jawa, Islam, Tionghoa, hingga Eropa. Keraton ini menjadi pusat budaya dan sejarah Cirebon hingga sekarang.",
-    "image": "assets/keratoncirebon.jpg"
-  },
-  {
-    "id": 7,
-    "title": "Sejarah Kota Cirebon",
-    "city": "Cirebon",
-    "date": "18 September 2025",
-    "content": "Nama Cirebon berasal dari kata Ci (air) dan Rebon (udang kecil), karena dahulu masyarakat setempat banyak menangkap rebon di sungai-sungai. Kota ini kemudian berkembang menjadi pusat perdagangan dan penyebaran Islam melalui Kesultanan Cirebon.",
-    "image": "assets/cirebon.jpg"
-  },
-  {
-    "id": 8,
-    "title": "Sejarah Kota Cirebon",
-    "city": "Cirebon",
-    "date": "18 September 2025",
-    "content": "Nama Cirebon berasal dari kata Ci (air) dan Rebon (udang kecil), karena dahulu masyarakat setempat banyak menangkap rebon di sungai-sungai. Kota ini kemudian berkembang menjadi pusat perdagangan dan penyebaran Islam melalui Kesultanan Cirebon.",
-    "image": "assets/cirebon.jpg"
-  },
-  {
-    "id": 9,
-    "title": "Sejarah Kota Cirebon",
-    "city": "Cirebon",
-    "date": "18 September 2025",
-    "content": "Nama Cirebon berasal dari kata Ci (air) dan Rebon (udang kecil), karena dahulu masyarakat setempat banyak menangkap rebon di sungai-sungai. Kota ini kemudian berkembang menjadi pusat perdagangan dan penyebaran Islam melalui Kesultanan Cirebon.",
-    "image": "assets/cirebon.jpg"
-  },
-  {
-    "id": 10,
-    "title": "Sejarah Kota Cirebon",
-    "city": "Cirebon",
-    "date": "18 September 2025",
-    "content": "Nama Cirebon berasal dari kata Ci (air) dan Rebon (udang kecil), karena dahulu masyarakat setempat banyak menangkap rebon di sungai-sungai. Kota ini kemudian berkembang menjadi pusat perdagangan dan penyebaran Islam melalui Kesultanan Cirebon.",
-    "image": "assets/cirebon.jpg"
-  },
-  {
-    "id": 11,
-    "title": "Sejarah Kota Cirebon",
-    "city": "Cirebon",
-    "date": "18 September 2025",
-    "content": "Nama Cirebon berasal dari kata Ci (air) dan Rebon (udang kecil), karena dahulu masyarakat setempat banyak menangkap rebon di sungai-sungai. Kota ini kemudian berkembang menjadi pusat perdagangan dan penyebaran Islam melalui Kesultanan Cirebon.",
-    "image": "assets/cirebon.jpg"
-  },
-  {
-    "id": 12,
-    "title": "Sejarah Kota Cirebon",
-    "city": "Cirebon",
-    "date": "18 September 2025",
-    "content": "Nama Cirebon berasal dari kata Ci (air) dan Rebon (udang kecil), karena dahulu masyarakat setempat banyak menangkap rebon di sungai-sungai. Kota ini kemudian berkembang menjadi pusat perdagangan dan penyebaran Islam melalui Kesultanan Cirebon.",
-    "image": "assets/cirebon.jpg"
-  },
-  {
-    "id": 13,
-    "title": "Sejarah Kota Cirebon",
-    "city": "Cirebon",
-    "date": "18 September 2025",
-    "content": "Nama Cirebon berasal dari kata Ci (air) dan Rebon (udang kecil), karena dahulu masyarakat setempat banyak menangkap rebon di sungai-sungai. Kota ini kemudian berkembang menjadi pusat perdagangan dan penyebaran Islam melalui Kesultanan Cirebon.",
-    "image": "assets/cirebon.jpg"
-  },
-  {
-    "id": 14,
-    "title": "Sejarah Kota Cirebon",
-    "city": "Cirebon",
-    "date": "18 September 2025",
-    "content": "Nama Cirebon berasal dari kata Ci (air) dan Rebon (udang kecil), karena dahulu masyarakat setempat banyak menangkap rebon di sungai-sungai. Kota ini kemudian berkembang menjadi pusat perdagangan dan penyebaran Islam melalui Kesultanan Cirebon.",
-    "image": "assets/cirebon.jpg"
-  },
-  {
-    "id": 15,
-    "title": "Sejarah Kota Cirebon",
-    "city": "Cirebon",
-    "date": "18 September 2025",
-    "content": "Nama Cirebon berasal dari kata Ci (air) dan Rebon (udang kecil), karena dahulu masyarakat setempat banyak menangkap rebon di sungai-sungai. Kota ini kemudian berkembang menjadi pusat perdagangan dan penyebaran Islam melalui Kesultanan Cirebon.",
-    "image": "assets/cirebon.jpg"
-  },
-  {
-    "id": 16,
-    "title": "Sejarah Kota Cirebon",
-    "city": "Cirebon",
-    "date": "18 September 2025",
-    "content": "Nama Cirebon berasal dari kata Ci (air) dan Rebon (udang kecil), karena dahulu masyarakat setempat banyak menangkap rebon di sungai-sungai. Kota ini kemudian berkembang menjadi pusat perdagangan dan penyebaran Islam melalui Kesultanan Cirebon.",
-    "image": "assets/cirebon.jpg"
-  },
-  {
-    "id": 17,
-    "title": "Sejarah Kota Cirebon",
-    "city": "Cirebon",
-    "date": "18 September 2025",
-    "content": "Nama Cirebon berasal dari kata Ci (air) dan Rebon (udang kecil), karena dahulu masyarakat setempat banyak menangkap rebon di sungai-sungai. Kota ini kemudian berkembang menjadi pusat perdagangan dan penyebaran Islam melalui Kesultanan Cirebon.",
-    "image": "assets/cirebon.jpg"
-  },
-  {
-    "id": 18,
-    "title": "Sejarah Kota Cirebon",
-    "city": "Cirebon",
-    "date": "18 September 2025",
-    "content": "Nama Cirebon berasal dari kata Ci (air) dan Rebon (udang kecil), karena dahulu masyarakat setempat banyak menangkap rebon di sungai-sungai. Kota ini kemudian berkembang menjadi pusat perdagangan dan penyebaran Islam melalui Kesultanan Cirebon.",
-    "image": "assets/cirebon.jpg"
-  },
-  {
-    "id": 19,
-    "title": "Sejarah Kota Cirebon",
-    "city": "Cirebon",
-    "date": "18 September 2025",
-    "content": "Nama Cirebon berasal dari kata Ci (air) dan Rebon (udang kecil), karena dahulu masyarakat setempat banyak menangkap rebon di sungai-sungai. Kota ini kemudian berkembang menjadi pusat perdagangan dan penyebaran Islam melalui Kesultanan Cirebon.",
-    "image": "assets/cirebon.jpg"
-  },
-  {
-    "id": 20,
-    "title": "Sejarah Kota Cirebon",
-    "city": "Cirebon",
-    "date": "18 September 2025",
-    "content": "Nama Cirebon berasal dari kata Ci (air) dan Rebon (udang kecil), karena dahulu masyarakat setempat banyak menangkap rebon di sungai-sungai. Kota ini kemudian berkembang menjadi pusat perdagangan dan penyebaran Islam melalui Kesultanan Cirebon.",
-    "image": "assets/cirebon.jpg"
-  },
-  {
-    "id": 21,
-    "title": "Sejarah Kota Cirebon",
-    "city": "Cirebon",
-    "date": "18 September 2025",
-    "content": "Nama Cirebon berasal dari kata Ci (air) dan Rebon (udang kecil), karena dahulu masyarakat setempat banyak menangkap rebon di sungai-sungai. Kota ini kemudian berkembang menjadi pusat perdagangan dan penyebaran Islam melalui Kesultanan Cirebon.",
-    "image": "assets/cirebon.jpg"
+    "date": "12 September 2025",
+    "contentFile": "articles/jalanbraga.txt",
+    "image": "assets/bandung.jpg"
   }
-]
+  ]

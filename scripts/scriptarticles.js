@@ -29,24 +29,51 @@ function renderArticles(data, reset = false) {
     const card = document.createElement("div");
     card.classList.add("article-card");
 
-    card.innerHTML = `
-      <img src="${article.image}" alt="${article.title}" width="200">
-      <h3>${article.title}</h3>
-      <p><strong>${article.city}</strong></p>
-      <p>${article.content.substring(0, 100)}...</p>
-      <button onclick="toggleFavorite(${article.id})">
-        ${favorites.includes(article.id) ? "Hapus dari Favorit" : "Tambah ke Favorit"}
-      </button>
-    `;
+    // Default preview text
+    let previewText = "";
 
-    // Klik card -> detail
-    card.addEventListener("click", (e) => {
-      if (e.target.tagName.toLowerCase() !== "button") {
-        window.location.href = `article-detail.html?id=${article.id}`;
-      }
-    });
+    // Jika article punya content langsung
+    if (article.content) {
+      previewText = article.content.substring(0, 100) + "...";
+      renderCard();
+    }
+    // Jika article pakai file eksternal (contentFile)
+    else if (article.contentFile) {
+      fetch(article.contentFile)
+        .then((res) => res.text())
+        .then((text) => {
+          previewText = text.substring(0, 100) + "...";
+          renderCard();
+        })
+        .catch(() => {
+          previewText = "(Gagal memuat preview)";
+          renderCard();
+        });
+    } else {
+      previewText = "(Tidak ada konten)";
+      renderCard();
+    }
 
-    container.appendChild(card);
+    function renderCard() {
+      card.innerHTML = `
+        <img src="${article.image}" alt="${article.title}" width="200">
+        <h3>${article.title}</h3>
+        <p><strong>${article.city}</strong></p>
+        <p>${previewText}</p>
+        <button onclick="toggleFavorite(${article.id}); event.stopPropagation();">
+          ${favorites.includes(article.id) ? "Hapus dari Favorit" : "Tambah ke Favorit"}
+        </button>
+      `;
+
+      // Klik card -> detail
+      card.addEventListener("click", (e) => {
+        if (e.target.tagName.toLowerCase() !== "button") {
+          window.location.href = `article-detail.html?id=${article.id}`;
+        }
+      });
+
+      container.appendChild(card);
+    }
   });
 
   currentIndex += perPage;
@@ -77,11 +104,13 @@ loadMoreBtn.addEventListener("click", () => {
 // Search
 searchInput.addEventListener("input", (e) => {
   const keyword = e.target.value.toLowerCase();
-  const filtered = articles.filter(
-    (a) =>
+  const filtered = articles.filter((a) => {
+    const contentText = a.content || ""; // handle undefined
+    return (
       a.title.toLowerCase().includes(keyword) ||
-      a.content.toLowerCase().includes(keyword)
-  );
+      contentText.toLowerCase().includes(keyword)
+    );
+  });
   renderArticles(filtered, true);
 });
 

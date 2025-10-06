@@ -5,6 +5,7 @@ const articleId = parseInt(params.get("id"));
 // Ambil daftar favorit dari localStorage (array of id)
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
+// Ambil data artikel dari JSON
 fetch("data/articles.json")
   .then((res) => res.json())
   .then((articles) => {
@@ -15,58 +16,80 @@ fetch("data/articles.json")
       return;
     }
 
-    // Cek apakah artikel sudah difavoritkan
-    const isFavorited = favorites.includes(article.id);
+    // Fungsi untuk render artikel (bisa dipanggil ulang setelah fetch contentFile)
+    function renderArticle(content) {
+      const isFavorited = favorites.includes(article.id);
 
-    // Render artikel lengkap
-    document.getElementById("articleDetail").innerHTML = `
-      <div class="article-full">
-        <img src="${article.image}" alt="${article.title}" />
-        <h1>${article.title}</h1>
-        <p class="article-meta">
-          <span class="date">${article.date}</span> • 
-          <span class="city">${article.city}</span>
-        </p>
-        <p>${article.content}</p>
-        <button id="favBtn" class="${isFavorited ? "remove" : "add"}">
-          ${isFavorited ? "Hapus dari Favorit" : "Tambah ke Favorit"}
-        </button>
-        <br><br>
-        <a href="articles.html" class="back-btn">← Kembali</a>
-      </div>
-    `;
+      // 🔥 Pisahkan teks menjadi paragraf (split berdasarkan baris kosong)
+      const paragraphs = content
+        .split(/\n\s*\n/) // pisah per dua baris kosong
+        .map((p) => p.trim())
+        .filter((p) => p.length > 0);
 
-    // Event untuk toggle favorit
-    const favBtn = document.getElementById("favBtn");
-    favBtn.addEventListener("click", () => {
-      let message = "";
-      let type = "";
+      // Ubah ke HTML paragraf
+      const formattedContent = paragraphs.map((p) => `<p>${p}</p>`).join("");
 
-      if (favorites.includes(article.id)) {
-        // Hapus dari favorit
-        favorites = favorites.filter((favId) => favId !== article.id);
-        message = "Dihapus dari Favorit";
-        type = "remove";
-      } else {
-        // Tambah ke favorit
-        favorites.push(article.id);
-        message = "Ditambahkan ke Favorit";
-        type = "add";
-      }
+      document.getElementById("articleDetail").innerHTML = `
+        <div class="article-full">
+          <img src="${article.image}" alt="${article.title}" />
+          <h1>${article.title}</h1>
+          <p class="article-meta">
+            <span class="date">${article.date}</span> • 
+            <span class="city">${article.city}</span>
+          </p>
+          ${formattedContent}
+          <button id="favBtn" class="${isFavorited ? "remove" : "add"}">
+            ${isFavorited ? "Hapus dari Favorit" : "Tambah ke Favorit"}
+          </button>
+          <br><br>
+          <a href="articles.html" class="back-btn">← Kembali</a>
+        </div>
+      `;
 
-      // Simpan ke localStorage
-      localStorage.setItem("favorites", JSON.stringify(favorites));
+      // Event untuk toggle favorit
+      const favBtn = document.getElementById("favBtn");
+      favBtn.addEventListener("click", () => {
+        let message = "";
+        let type = "";
 
-      // Update tampilan tombol
-      const isNowFav = favorites.includes(article.id);
-      favBtn.textContent = isNowFav
-        ? "Hapus dari Favorit"
-        : "Tambah ke Favorit";
-      favBtn.className = isNowFav ? "remove" : "add";
+        if (favorites.includes(article.id)) {
+          // Hapus dari favorit
+          favorites = favorites.filter((favId) => favId !== article.id);
+          message = "Dihapus dari Favorit";
+          type = "remove";
+        } else {
+          // Tambah ke favorit
+          favorites.push(article.id);
+          message = "Ditambahkan ke Favorit";
+          type = "add";
+        }
 
-      // Tampilkan toast
-      showToast(message, type);
-    });
+        // Simpan ke localStorage
+        localStorage.setItem("favorites", JSON.stringify(favorites));
+
+        // Update tampilan tombol
+        const isNowFav = favorites.includes(article.id);
+        favBtn.textContent = isNowFav
+          ? "Hapus dari Favorit"
+          : "Tambah ke Favorit";
+        favBtn.className = isNowFav ? "remove" : "add";
+
+        // Tampilkan toast
+        showToast(message, type);
+      });
+    }
+
+    // 🔥 Cek apakah artikel pakai file eksternal atau langsung
+    if (article.contentFile) {
+      // Ambil isi file .txt
+      fetch(article.contentFile)
+        .then((res) => res.text())
+        .then((text) => renderArticle(text))
+        .catch(() => renderArticle("<p>Gagal memuat isi artikel.</p>"));
+    } else {
+      // Kalau pakai content langsung dari JSON
+      renderArticle(article.content);
+    }
   });
 
 // Fungsi toast
