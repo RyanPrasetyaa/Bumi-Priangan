@@ -36,5 +36,43 @@
         "content": "Cirebon memiliki kekayaan etnis dan budaya yang terbentuk dari campuran Sunda, Jawa, Tionghoa, dan Arab, dengan bahasa Cirebonan yang digunakan sebagai bahasa sehari-hari. Perekonomiannya ditopang oleh perdagangan, batik, perikanan, dan sektor pariwisata yang terus berkembang. Kebudayaan Cirebon pun sangat khas, tercermin dalam tradisi keraton, seni tari topeng, gamelan, batik pesisir, hingga seni ukir yang menjadi identitas dan daya tarik utama kota ini."
       }
     ]
+  },
+  {
+    "id": "bekasi",
+    "name": "Bekasi",
+    "banner": "assets/bekasi.png",
+    "sections": [
+      {
+        "title": "🏞 Asal-usul Nama Bekasi",
+        "content": "Nama Bekasi berasal dari kata “Bhagasasi”, nama sungai dan wilayah yang disebut dalam Prasasti Tugu dari masa Kerajaan Tarumanegara. Bhagasasi kemudian berkembang menjadi “Bekasi” dalam pelafalan modern. Bekasi merupakan salah satu wilayah tertua di Jawa Barat yang tercatat dalam sejarah kerajaan Hindu."
+      },
+      {
+        "title": "🏛 Perkembangan Sejarah Bekasi",
+        "content": "Bekasi memiliki sejarah panjang yang berakar sejak Masa Kerajaan, di mana wilayah ini menjadi bagian penting dari Kerajaan Tarumanegara dengan basis masyarakat agraris dan spiritual yang mengandalkan sungai-sungai besar seperti Cakung dan Bekasi sebagai jalur utama transportasi dan irigasi. Seiring berjalannya waktu, pada Masa Kolonial Belanda, Bekasi bertransformasi menjadi koridor logistik vital yang menghubungkan Batavia (Jakarta) dan Karawang, yang ditandai dengan pembangunan jalur kereta api dan sistem irigasi yang mendukung aktivitas pertanian dan distribusi hasil bumi. Kini, Bekasi telah berevolusi menjadi Kota Modern yang dinamis, berfungsi sebagai pusat industri dan wilayah urban yang berkembang pesat, berbatasan langsung dan menjadi komponen integral dari kawasan megapolitan Jabodetabek."
+      },
+      {
+        "title": "👥 Masyarakat Bekasi",
+        "content": "Kota Bekasi dicirikan oleh keragaman Etnis dan Budaya, yang merupakan perpaduan dinamis dari masyarakat Betawi, Sunda, Jawa, dan Tionghoa yang hidup berdampingan. Secara Ekonomi, kota ini memiliki basis yang sangat kuat dan beragam, didukung oleh sektor industri, perdagangan, jasa, dan transportasi yang berkembang pesat. Kehidupan Kebudayaannya pun kaya, menampilkan spektrum yang luas mulai dari mempertahankan Tradisi Betawi hingga berkembangnya seni modern, budaya urban, dan komunitas kreatif yang inovatif."
+      }
+    ]
+  },
+  {
+    "id": "bogor",
+    "name": "Bogor",
+    "banner": "assets/cirebon.jpg",
+    "sections": [
+      {
+        "title": "🏞 Asal-usul Nama Bogor",
+        "content": "Nama Cirebon berasal dari kata “ci” (air) dan “rebon” (udang kecil), merujuk pada daerah pesisir yang kaya hasil laut. Versi lain menyebut “Caruban” yang berarti campuran, karena Cirebon menjadi titik pertemuan budaya Sunda, Jawa, Tionghoa, dan Arab. Kondisi geografis Cirebon yang berada di pesisir utara Jawa Barat menjadikannya sebagai wilayah strategis dalam jalur perdagangan laut sejak masa kuno."
+      },
+      {
+        "title": "🏛 Perkembangan Sejarah Bogor",
+        "content": "Cirebon berkembang sebagai pusat penyebaran Islam di Jawa Barat di bawah kepemimpinan Sunan Gunung Jati, sekaligus menjadi pusat kekuasaan Kesultanan Cirebon dengan berdirinya Keraton Kasepuhan, Kanoman, dan Kacirebonan. Kehidupan masyarakatnya bertumpu pada perdagangan laut, pertanian, serta kerajinan batik, sementara letaknya yang strategis menjadikan Cirebon sebagai titik pertemuan berbagai etnis, budaya, dan spiritualitas. Pada masa kolonial Belanda, Cirebon berperan sebagai pelabuhan penting dalam jalur perdagangan rempah dan batik, didukung dengan pembangunan infrastruktur seperti pelabuhan dan jalur kereta api yang menghubungkannya dengan Priangan dan Batavia. Kini, Cirebon berkembang sebagai kota budaya pesisir yang dikenal dengan industri batik megamendung serta destinasi wisata sejarah, dengan keraton dan bangunan kolonial yang tetap menjadi daya tarik utama."
+      },
+      {
+        "title": "👥 Masyarakat Bogor",
+        "content": "Cirebon memiliki kekayaan etnis dan budaya yang terbentuk dari campuran Sunda, Jawa, Tionghoa, dan Arab, dengan bahasa Cirebonan yang digunakan sebagai bahasa sehari-hari. Perekonomiannya ditopang oleh perdagangan, batik, perikanan, dan sektor pariwisata yang terus berkembang. Kebudayaan Cirebon pun sangat khas, tercermin dalam tradisi keraton, seni tari topeng, gamelan, batik pesisir, hingga seni ukir yang menjadi identitas dan daya tarik utama kota ini."
+      }
+    ]
   }
 ]
