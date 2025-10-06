@@ -6,20 +6,14 @@
 }
 .custom-box {
   position: relative;
-  width: 100%;
-  max-width: 1280px;
-  margin: 24px auto;
-  padding: 64px 72px;
+  width: 90%;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 28px 36px;
   border-radius: 24px;
   color: #f5f7fa;
   background: rgba(20, 22, 26, 0.55);
   border: 1px solid transparent;
-  border-image: linear-gradient(
-      135deg,
-      rgba(243, 198, 0, 0.3),
-      rgba(255, 152, 0, 0.2)
-    )
-    1;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
@@ -31,7 +25,6 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("motif-priangan.png"); /* transparan, siluet atau batik */
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.035;
@@ -40,11 +33,11 @@
 }
 
 .custom-box p {
-  font-size: 21px; /* dari default 16–18px → jadi besar dan jelas */
-  line-height: 1.9; /* spasi antar baris lebih lega */
-  letter-spacing: -0.015em; /* sedikit rapat biar nggak terlalu renggang */
-
-  margin-bottom: 24px; /* jarak antar paragraf */
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: -0.015em;
+  margin-bottom: 24px;
+  text-align: justify;
 }
 
 .title-wrapper {
@@ -54,98 +47,13 @@
   margin-bottom: 28px;
 }
 
-.title-addon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 28x;
-  font-size: 22px;
-  background: linear-gradient(135deg, #ffd54f, #ff9800);
-  color: #1b1f24;
-  box-shadow: 0 4px 10px rgba(255, 152, 0, 0.4);
-  transition: all 0.3s ease;
-}
-
-.title-addon:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 14px rgba(255, 152, 0, 0.6);
-}
-
 .box-title {
   margin: 0;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 1200;
   line-height: 1.3;
   text-shadow: 0 2px 4px rgba(255, 193, 7, 0.2);
-}
-
-.custom-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  gap: 16px;
-  font-size: 50px;
-  line-height: 1.7;
-}
-
-.custom-list li {
-  position: relative;
-  padding-left: 28px;
-  color: #e0e4ec;
-  transition: all 0.3s ease;
-}
-
-.custom-list li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 30px;
-  color: #ffc107;
-}
-
-.custom-box table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 28px;
-  font-size: 22px;
-  line-height: 1.8;
-  color: #f5f7fa;
-  background-color: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(243, 198, 0, 0.2);
-  box-shadow: 0 6px 16px rgba(61, 40, 0, 0.25);
-  border-radius: 14px;
-  overflow: hidden;
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
-}
-
-.custom-box th {
-  padding: 20px 24px;
-  font-size: 24px;
-  font-weight: 700;
-  background: linear-gradient(135deg, #ffeb3b, #ffc107);
-  color: #1b1f24;
-  border-bottom: 1px solid rgba(243, 198, 0, 0.3);
-  text-shadow: 0 1px 2px rgba(255, 193, 7, 0.3);
-}
-
-.custom-box td {
-  padding: 18px 24px;
-  border-bottom: 1px solid rgba(243, 198, 0, 0.1);
-  color: #e0e4ec;
-}
-
-.custom-box tr:last-child td {
-  border-bottom: none;
-}
-
-.custom-box tr:hover td {
-  background-color: rgba(255, 193, 7, 0.06);
-  transition: background-color 0.3s ease;
+  text-align: center
 }
 
 .header {
