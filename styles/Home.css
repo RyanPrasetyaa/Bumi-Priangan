@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body,
@@ -26,17 +26,30 @@ html {
 }
 
 /* Gambar latar */
-.bg-image {
+/* Video latar */
+.bg-video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: blur(14px) brightness(55%);
-  transform: scale(1.08);
+  filter: brightness(55%) blur(10px);
+  transform: scale(1.05);
   z-index: 0;
 }
+
+/* Overlay gelap opsional (untuk efek tambahan) */
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
 
 /* Bar atas: logo + ikon */
 .top-bar {
@@ -109,21 +122,19 @@ html {
 }
 
 .content h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   margin-bottom: 1rem;
   letter-spacing: 1.2px;
   font-weight: 700;
 }
 
 .content p {
-  font-size: 1.2rem;
   margin-bottom: 2rem;
   line-height: 1.7;
   opacity: 0.9;
-  font-size: 26px;
+  font-size: 22px;
 }
 
-/* Tombol CTA */
 .btn {
   background-color: #ffcc00;
   color: #000;
