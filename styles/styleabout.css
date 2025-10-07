@@ -4,6 +4,23 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+
+body {
+  overflow-y: hidden;
+  opacity: 0;
+  animation: fadeIn 0.7s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+body.loaded {
+  overflow-y: auto;
+}
+
 .custom-box {
   position: relative;
   width: 90%;

@@ -8,6 +8,10 @@ const searchInput = document.getElementById("searchInput");
 const filterButtons = document.querySelectorAll("#filterButtons button");
 const loadMoreBtn = document.getElementById("loadMoreBtn");
 
+window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
+});
+
 // Fetch data dari JSON
 fetch("data/articles.json")
   .then((res) => res.json())

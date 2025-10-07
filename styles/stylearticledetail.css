@@ -9,6 +9,19 @@ body {
   background: #231c07;
   color: #333;
   line-height: 1.6;
+  overflow-y: hidden;
+  opacity: 0;
+  animation: fadeIn 0.7s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+body.loaded {
+  overflow-y: auto;
 }
 
 .header {

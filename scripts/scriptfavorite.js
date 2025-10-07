@@ -1,6 +1,10 @@
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 const container = document.getElementById("favoritesContainer");
 
+window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
+});
+
 // Ambil semua artikel dari JSON
 fetch("data/articles.json")
   .then((res) => res.json())

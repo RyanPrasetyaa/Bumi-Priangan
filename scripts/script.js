@@ -7,6 +7,10 @@ const slides = document.querySelectorAll(".slide");
 const numberOfSlides = slides.length;
 let slideNumber = 0;
 
+window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
+});
+
 nextBtn.onclick = () => {
   slides.forEach((slide) => {
     slide.classList.remove("active");
