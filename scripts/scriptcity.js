@@ -52,8 +52,8 @@ fetch("data/articles.json")
       return;
     }
 
-    const filtered = articles.filter(
-      a => a.city.toLowerCase() === cityId.toLowerCase()
+    const filtered = articles.filter(a =>
+      a.city.toLowerCase().includes(cityId.toLowerCase())
     );
 
     if (filtered.length === 0) {
@@ -67,7 +67,7 @@ fetch("data/articles.json")
         <div class="article-card-body">
           <span class="date">${article.date}</span>
           <h3>${article.title}</h3>
-          <p>${article.content.substring(0, 100)}...</p>
+          <p>Artikel ini tersedia, klik untuk baca selengkapnya...</p>
         </div>
       </div>
     `).join("");
