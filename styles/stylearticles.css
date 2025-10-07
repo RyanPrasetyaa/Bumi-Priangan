@@ -307,3 +307,117 @@ main {
 .toast.remove {
   background: #c62828; /* merah */
 }
+
+/* ===== HAMBURGER ===== */
+.hamburger {
+  display: none;             
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;                      
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;                  
+  height: 2.5px;                
+  background-color: #fff;      
+  border-radius: 2px;           
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  /* Header fixed dan simpel (hamburger | logo | sosmed) */
+  :root { --header-h: 100px; 
+  } /* tinggi header di mobile */
+  
+  .header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: 44px 1fr 44px;
+    align-items: center;
+    padding: 12px 14px;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(6px);
+  }
+  .hamburger { display: inline-flex; }
+  .logo { justify-self: center; }
+  .logo img { width: 160px; height: auto; }
+
+  .social-media {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-self: end;
+  }
+  .social-media a { width: 30px; height: 30px; }
+
+  /* Navbar dropdown menempel di bawah header */
+  .navbar {
+    position: fixed;
+    top: 60px;           /* kira-kira tinggi header di mobile */
+    left: 0; right: 0;
+    z-index: 120;
+    display: none;
+    flex-direction: column;
+    padding: 12px 16px 16px;
+    background: rgba(17,17,17,0.95);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+  }
+  .navbar.open { display: flex; }
+  .navbar a { margin: 10px 0; font-size: 16px; }
+
+  .articles-header {
+    padding: 110px 16px 16px;
+    background-position: center;
+  }
+
+  #filterButtons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+    gap: 8px;
+    padding: 0 12px;
+    margin: 12px 0;
+  }
+  #filterButtons button {
+    width: 100%;
+    margin: 0;
+    padding: 10px 10px;
+    font-size: 13px;
+    border-radius: 6px;
+  }
+
+  /* Grid artikel: tetap 2 kolom */
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 12px;
+  }
+
+  /* Kartu ringkas: tampilkan gambar + judul saja */
+  .article-card { padding: 10px; }
+  .article-card img { height: 110px; }
+  .article-card h3 { font-size: 15px; margin: 8px 0 0; }
+
+  /* Sembunyikan semua paragraf di kartu (city & preview) */
+  .article-card p { display: none; }
+
+  /* Tombol favorit sedikit diperkecil (kalau kamu ingin tetap tampil) */
+  .article-card button {
+    margin-top: 8px;
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .articles-header {
+    padding-top: calc(var(--header-h) + 36px) !important;
+  }
+}
