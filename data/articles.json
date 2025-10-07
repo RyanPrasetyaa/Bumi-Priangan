@@ -4,47 +4,399 @@
     "title": "Mengarungi Sejarah Jalan Braga: Jantung 'Parijs van Java' yang Tak Lekang Dimakan Zaman",
     "city": "Bandung",
     "date": "12 September 2025",
-    "contentFile": "articles/jalanbraga.txt",
-    "image": "assets/articles_assets/braga.jpeg"
+    "contentFile": "articles/bandung/jalanbraga.txt",
+    "image": "assets/articles_assets/Bandung/braga.jpeg"
   },
   {
     "id": 2,
-    "title": "Mengarungi Sejarah Jalan Braga: Jantung 'Parijs van Java' yang Tak Lekang Dimakan Zaman",
+    "title": "Mengapa Bandung Selalu Menjadi Pilihan: Pesona Tak Lekang Waktu di Kota Kembang",
     "city": "Bandung",
-    "date": "12 September 2025",
-    "contentFile": "articles/jalanbraga.txt",
-    "image": "assets/bandung.jpg"
+    "date": "10 September 2025",
+    "contentFile": "articles/bandung/KotaKembang.txt",
+    "image": "assets/articles_assets/Bandung/Kembang.png"
   },
   {
     "id": 3,
-    "title": "Mengarungi Sejarah Jalan Braga: Jantung 'Parijs van Java' yang Tak Lekang Dimakan Zaman",
+    "title": "Gedung Sate: Jejak Megah Kekuasaan dan Ikon Abadi Kota Bandung",
     "city": "Bandung",
-    "date": "12 September 2025",
-    "contentFile": "articles/jalanbraga.txt",
+    "date": "8 September 2025",
+    "contentFile": "articles/bandung/GedungSate.txt",
     "image": "assets/bandung.jpg"
   },
   {
     "id": 4,
-    "title": "Mengarungi Sejarah Jalan Braga: Jantung 'Parijs van Java' yang Tak Lekang Dimakan Zaman",
+    "title": "Menyelami Sejarah dan Seni di Balik Kehangatan Kopi Bandung",
     "city": "Bandung",
-    "date": "12 September 2025",
-    "contentFile": "articles/jalanbraga.txt",
-    "image": "assets/bandung.jpg"
+    "date": "6 September 2025",
+    "contentFile": "articles/bandung/KotaKembang.txt",
+    "image": "assets/articles_assets/Bandung/Dago.png"
   },
   {
     "id": 5,
-    "title": "Mengarungi Sejarah Jalan Braga: Jantung 'Parijs van Java' yang Tak Lekang Dimakan Zaman",
+    "title": "Dago: Perpaduan Romantis Hijaunya Bukit dan Kilau Gaya Hidup Modern",
     "city": "Bandung",
-    "date": "12 September 2025",
-    "contentFile": "articles/jalanbraga.txt",
-    "image": "assets/bandung.jpg"
+    "date": "4 September 2025",
+    "contentFile": "articles/bandung/Dago.txt",
+    "image": "assets/articles_assets/Bandung/Kopi.png"
   },
   {
     "id": 6,
-    "title": "Mengarungi Sejarah Jalan Braga: Jantung 'Parijs van Java' yang Tak Lekang Dimakan Zaman",
-    "city": "Bandung",
-    "date": "12 September 2025",
-    "contentFile": "articles/jalanbraga.txt",
-    "image": "assets/bandung.jpg"
+    "title": "Cirebon: di Balik Sembilan Pintu Gerbang: Menyelami Kedalaman Spiritualitas Makam Sunan Gunung Jati",
+    "city": "Cirebon",
+    "date": "13 juni 2025",
+    "contentFile": "articles/Cirebon/Cirebon9Pintu.txt",
+    "image": "assets/articles_assets/Cirebon/Cirebon9Pintu.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Tari Topeng Cirebon: Lima Wajah Kehidupan dan Perjalanan Batin Manusia",
+    "city": "Cirebon",
+    "date": "9 September 2025",
+    "contentFile": "articles/Cirebon/TariTopeng.txt",
+    "image": "assets/articles_assets/Cirebon/TariTopeng.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Pelabuhan Cirebon: Jendela Dunia yang Membentuk Identitas Kota Udang",
+    "city": "Cirebon",
+    "date": "19 September 2025",
+    "contentFile": "articles/Cirebon/PelabuhanCirebon.txt",
+    "image": "assets/articles_assets/Cirebon/PelabuhanCirebon.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Basa Cirebonan: Dialek Perbatasan yang Merangkum Kisah Dua Budaya Besar",
+    "city": "Cirebon",
+    "date": "6 September 2025",
+    "contentFile": "articles/Cirebon/BasaCirebonan.txt",
+    "image": "assets/articles_assets/Cirebon/BasaCirebonan.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Dewi Welas Asih: Bukti Hidup Akulturasi Tionghoa dan Wali di Jantung Kota Cirebon",
+    "city": "Cirebon",
+    "date": "6 Maret 2025",
+    "contentFile": "articles/Cirebon/DewiWelas.txt",
+    "image": "assets/articles_assets/Cirebon/DewiWelas.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Bekasi: Dari Lumbung Padi ke Jantung Industri Megapolitan",
+    "city": "Bekasi",
+    "date": "12 Maret 2025",
+    "contentFile": "articles/Bekasi/BekasiMegapolitan.txt",
+    "image": "assets/articles_assets/Bekasi/BekasiMegapolitan.png"
+  },
+  {
+    "id": 12,
+    "title": "Kota Mandiri Bekasi: Desain Urbanisme Masa Depan dan Isu Kesenjangan",
+    "city": "Bekasi",
+    "date": "13 Maret 2025",
+    "contentFile": "articles/Bekasi/MandiriBekasi.txt",
+    "image": "assets/articles_assets/Bekasi/MandiriBekasi.png"
+  },
+  {
+    "id": 13,
+    "title": "Gedung Juang 45: Monumen Patriot di Jantung Bekasi yang Kini Tampil Modern",
+    "city": "Bekasi",
+    "date": "18 Maret 2025",
+    "contentFile": "articles/Bekasi/GedungJuang.txt",
+    "image": "assets/articles_assets/Bekasi/GedungJuang.png"
+  },
+  {
+    "id": 14,
+    "title": "Cikarang: Jantung Manufaktur Indonesia dan Kota yang Tak Pernah Tidur",
+    "city": "Bekasi",
+    "date": "21 Maret 2025",
+    "contentFile": "articles/Bekasi/Cikarang.txt",
+    "image": "assets/articles_assets/Bekasi/Cikarang.png"
+  },
+  {
+    "id": 15,
+    "title": "Saung Ranggon: Kisah Senyap di Tengah Bisingnya Kota Patriot",
+    "city": "Bekasi",
+    "date": "28 Maret 2025",
+    "contentFile": "articles/Bekasi/Saung.txt",
+    "image": "assets/articles_assets/Bekasi/Saung.png"
+  },
+  {
+    "id": 16,
+    "title": "Garut: Pesona Swiss van Java, Antara Keindahan Gunung dan Kehangatan Dodol",
+    "city": "Garut",
+    "date": "12 Januari 2025",
+    "contentFile": "articles/Garut/PesonaGarut.txt",
+    "image": "assets/articles_assets/Garut/PesonaGarut.png"
+  },
+  {
+    "id": 17,
+    "title": "Cikuray dan Kopi Garut: Kisah Ketinggian, Spiritualitas, dan Aroma Terbaik Priangan",
+    "city": "Garut",
+    "date": "13 Januari 2025",
+    "contentFile": "articles/Garut/KopiGarut.txt",
+    "image": "assets/articles_assets/Garut/KopiGarut.png"
+  },
+  {
+    "id": 18,
+    "title": "Situ Bagendit: Keindahan Danau dan Kisah Legenda Nyi Endit yang Melegenda",
+    "city": "Garut",
+    "date": "39 Januari 2025",
+    "contentFile": "articles/Garut/SituBagendit.txt",
+    "image": "assets/articles_assets/Garut/SituBagendit.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Sukaregang: Jantung Kulit Garut, Kisah Pengrajin dan Kualitas yang Melegenda",
+    "city": "Garut",
+    "date": "1 Januari 2025",
+    "contentFile": "articles/Garut/Sukaregang.txt",
+    "image": "assets/articles_assets/Garut/Sukaregang.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Talaga Bodas: Keindahan Sunyi Danau Belerang di Puncak Garut",
+    "city": "Garut",
+    "date": "12 Maret 2025",
+    "contentFile": "articles/Garut/Talaga.txt",
+    "image": "assets/articles_assets/Garut/Talaga.jpg"
+  },
+  {
+    "id": 21,
+    "title": "Depok: Kota Belimbing, Universitas, dan Transformasi Megapolitan Jakarta",
+    "city": "Depok",
+    "date": "15 Maret 2025",
+    "contentFile": "articles/Depok/KotaDepok.txt",
+    "image": "assets/articles_assets/Depok/KotaDepok.png"
+  },
+  {
+    "id": 22,
+    "title": "Nasi Tutug Oncom dan Situ Gede: Dua Sisi Kehangatan di Kota Santri",
+    "city": "Depok",
+    "date": "10 Maret 2025",
+    "contentFile": "articles/Depok/DepokLama.txt",
+    "image": "assets/articles_assets/Depok/DepokLama.png"
+  },
+  {
+    "id": 23,
+    "title": "Margonda Raya: Arteri Kota Depok, Antara Kampus, Mall, dan Kemacetan Kronis",
+    "city": "Depok",
+    "date": "2 Maret 2025",
+    "contentFile": "articles/Depok/Margonda.txt",
+    "image": "assets/articles_assets/Depok/Margonda.jpg"
+  },
+  {
+    "id": 24,
+    "title": "Kota Belimbing: Melacak Identitas Hijau Depok di Tengah Himpitan Beton",
+    "city": "Depok",
+    "date": "9 Maret 2025",
+    "contentFile": "articles/Depok/KotaBelimbing.txt",
+    "image": "assets/articles_assets/Depok/KotaBelimbing.jpg"
+  },
+  {
+    "id": 25,
+    "title": "Situ Cilodong: Oase Biru di Depok, Tempat Bersemayamnya Sejarah Militer",
+    "city": "Depok",
+    "date": "8 Maret 2025",
+    "contentFile": "articles/Depok/Cilodong.txt",
+    "image": "assets/articles_assets/Depok/Cilodong.png"
+  },
+  {
+    "id": 26,
+    "title": "Bogor: Kota Hujan, Jantung Botani, dan Warisan Kerajaan Pajajaran",
+    "city": "Bogor",
+    "date": "14 agustus 2025",
+    "contentFile": "articles/Bogor/KotaHujan.txt",
+    "image": "assets/articles_assets/Bogor/KotaHujan.png"
+  },
+  {
+    "id": 27,
+    "title": "Puncak Bogor: Jendela Sejuk Jakarta, Surga Agrowisata dan Perkebunan Teh",
+    "city": "Bogor",
+    "date": "9 Agustus 2025",
+    "contentFile": "articles/Bogor/Puncak.txt",
+    "image": "assets/articles_assets/Bogor/Puncak.png"
+  },
+  {
+    "id": 28,
+    "title": "Jejak Rasa di Kota Hujan: Menggali Kekayaan Kuliner Legendaris Bogor",
+    "city": "Bogor",
+    "date": "7 Agustus 2025",
+    "contentFile": "articles/Bogor/JejakRasa.txt",
+    "image": "assets/articles_assets/Bogor/JejakRasa.png"
+  },
+  {
+    "id": 29,
+    "title": "IPB dan Inovasi Hijau: Bogor, Jantung Sains Pertanian Nasional",
+    "city": "Bogor",
+    "date": "3 Agustus 2025",
+    "contentFile": "articles/Bogor/IPB.txt",
+    "image": "assets/articles_assets/Bogor/IPB.png"
+  },
+  {
+    "id": 30,
+    "title": "Pakuan Pajajaran: Menelusuri Jejak Kejayaan Kerajaan Sunda di Jantung Kota Hujan",
+    "city": "Bogor",
+    "date": "1 Januari 2025",
+    "contentFile": "articles/Bogor/Pakuan.txt",
+    "image": "assets/articles_assets/Bogor/Pakuan.png"
+  },
+  {
+    "id": 31,
+    "title": "Kuningan: Pesona Kaki Ciremai, Dari Telaga Sejarah hingga Surga Konservasi",
+    "city": "Kuningan",
+    "date": "3 Mei 2025",
+    "contentFile": "articles/Kuningan/Kuningan.txt",
+    "image": "assets/articles_assets/Kuningan/Kuningan.png"
+  },
+  {
+    "id": 32,
+    "title": "Telaga Biru Cicerem: Cermin Kesejukan Ciremai dan Konservasi Ikan Dewa",
+    "city": "Kuningan",
+    "date": "9 Mei 2025",
+    "contentFile": "articles/Kuningan/TalagaBiru.txt",
+    "image": "assets/articles_assets/Kuningan/TalagaBiru.png"
+  },
+  {
+    "id": 33,
+    "title": "Kerajaan Kuningan: Menggali Jejak Sejarah Sunda Kuno dan Pusat Kebudayaan",
+    "city": "Kuningan",
+    "date": "19 Mei 2025",
+    "contentFile": "articles/Kuningan/KerajaanKuningan.txt",
+    "image": "assets/articles_assets/Kuningan/KerajaanKuningan.png"
+  },
+  {
+    "id": 34,
+    "title": "Hucap, Kasreng, dan Ketan Manis: Menggali Cita Rasa Khas dari Kaki Ciremai",
+    "city": "Kuningan",
+    "date": "16 Mei 2025",
+    "contentFile": "articles/Kuningan/KetanManis.txt",
+    "image": "assets/articles_assets/Kuningan/KetanManis.png"
+  },
+  {
+    "id": 35,
+    "title": "Linggarjati: Simpul Sejarah, Kedamaian Alam, dan Gerbang Pendakian Ciremai",
+    "city": "Kuningan",
+    "date": "20 Mei 2025",
+    "contentFile": "articles/Kuningan/LinggarJati.txt",
+    "image": "assets/articles_assets/Kuningan/LinggarJati.png"
+  },
+  {
+    "id": 36,
+    "title": "Karawang: Dari Lumbung Padi dan Situs Perjuangan ke Jantung Industri Otomotif",
+    "city": "Karawang",
+    "date": "20 september 2025",
+    "contentFile": "articles/Karawang/Karawang.txt",
+    "image": "assets/articles_assets/Karawang/Karawang.png"
+  },
+  {
+    "id": 37,
+    "title": "Goyang Karawang dan Seni Rakyat: Denyut Budaya di Jantung Industri",
+    "city": "Karawang",
+    "date": "1 Mei 2025",
+    "contentFile": "articles/Karawang/GoyangKarawang.txt",
+    "image": "assets/articles_assets/Karawang/GoyangKarawang.png"
+  },
+  {
+    "id": 38,
+    "title": "Kerajaan Tarumanegara dan Batujaya: Melacak Akar Sejarah Kuno di Karawang",
+    "city": "Karawang",
+    "date": "23 Mei 2025",
+    "contentFile": "articles/Karawang/Tarumanagara.txt",
+    "image": "assets/articles_assets/Karawang/Tarumanagara.png"
+  },
+  {
+    "id": 39,
+    "title": "Karawang Pesisir: Dari Muara Citarum, Pantai Eksotis, hingga Tantangan Konservasi",
+    "city": "Karawang",
+    "date": "29 Mei 2025",
+    "contentFile": "articles/Karawang/KarawangPesisir.txt",
+    "image": "assets/articles_assets/Karawang/KarawangPesisir.png"
+  },
+  {
+    "id": 40,
+    "title": "Kota Mandiri Karawang: Fenomena Township dan Perumahan Global di Jantung Industri",
+    "city": "Karawang",
+    "date": "30 Mei 2025",
+    "contentFile": "articles/Karawang/KotaMandiri.txt",
+    "image": "assets/articles_assets/Karawang/KotaMandiri.png"
+  },
+  {
+    "id": 41,
+    "title": "Sukabumi: Gerbang Geopark Dunia, Antara Teluk Biru dan Puncak Sejuk",
+    "city": "SukaBumi",
+    "date": "2 Mei 2025",
+    "contentFile": "articles/Sukabumi/Sukabumi.txt",
+    "image": "assets/articles_assets/Sukabumi/Sukabumi.png"
+  },
+  {
+    "id": 42,
+    "title": "Citarasa Otentik Sukabumi: Dari Nasi Uduk Ungu Hingga Geco Pedas",
+    "city": "SukaBumi",
+    "date": "18 Mei 2025",
+    "contentFile": "articles/Sukabumi/Citarasa.txt",
+    "image": "assets/articles_assets/Sukabumi/Citarasa.png"
+  },
+  {
+    "id": 43,
+    "title": "Petualangan di Ciletuh: Menyusuri Curug Bertingkat dan Keajaiban Geologi",
+    "city": "SukaBumi",
+    "date": "24 Mei 2025",
+    "contentFile": "articles/Sukabumi/Ciletuh.txt",
+    "image": "assets/articles_assets/Sukabumi/Ciletuh.png"
+  },
+  {
+    "id": 44,
+    "title": "Sukabumi: Jejak Spiritual, Legenda Palabuhanratu, dan Warisan Sunda Kuna",
+    "city": "SukaBumi",
+    "date": "21 Mei 2025",
+    "contentFile": "articles/Sukabumi/JejakSukabumi.txt",
+    "image": "assets/articles_assets/Sukabumi/JejakSukabumi.png"
+  },
+  {
+    "id": 45,
+    "title": "Sukabumi: Tantangan Akses, Infrastruktur Vital, dan Ketergantungan Jalur Tunggal",
+    "city": "SukaBumi",
+    "date": "20 Mei 2025",
+    "contentFile": "articles/Sukabumi/JalurSukabumi.txt",
+    "image": "assets/articles_assets/Sukabumi/JalurSukabumi.png"
+  },
+  {
+    "id": 46,
+    "title": "Cianjur: Pusat Tembang Sunda, Lumbung Beras Pandanwangi, dan Kota Tauco",
+    "city": "Cianjur",
+    "date": "9 Mei 2025",
+    "contentFile": "articles/Cianjur/Cianjur.txt",
+    "image": "assets/articles_assets/Cianjur/Cianjur.png"
+  },
+  {
+    "id": 47,
+    "title": "Cibodas dan Cirata: Dua Wajah Alam Cianjur, Kesejukan Puncak dan Energi Waduk",
+    "city": "Cianjur",
+    "date": "7 Mei 2025",
+    "contentFile": "articles/Cianjur/Cibodas.txt",
+    "image": "assets/articles_assets/Cianjur/Cibodas.png"
+  },
+  {
+    "id": 48,
+    "title": "Tjiandjoer Tempo Dulu: Dari Kadipaten Menjadi Pusat Budaya Priangan",
+    "city": "Cianjur",
+    "date": "1 Mei 2025",
+    "contentFile": "articles/Cianjur/Tjiandjoer.txt",
+    "image": "assets/articles_assets/Cianjur/Tjiandjoer.png"
+  },
+  {
+    "id": 49,
+    "title": "Cianjur Modern: Antara Gempa, Pembangunan Kembali, dan Semangat Silih Asih",
+    "city": "Cianjur",
+    "date": "2 Mei 2025",
+    "contentFile": "articles/Cianjur/CianjurModern.txt",
+    "image": "assets/articles_assets/Cianjur/CianjurModern.png"
+  },
+  {
+    "id": 50,
+    "title": "Agro-Kuliner Cianjur: Manisan Segar, Asinan Khas, dan Kekayaan Hasil Bumi",
+    "city": "Cianjur",
+    "date": "4 Mei 2025",
+    "contentFile": "articles/Cianjur/AgroKuliner.txt",
+    "image": "assets/articles_assets/Cianjur/Agrokuliner.png"
   }
-  ]
+]
