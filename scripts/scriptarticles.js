@@ -157,3 +157,14 @@ function showToast(message, type) {
     setTimeout(() => toast.remove(), 500);
   }, 2000);
 }
+
+/* ====== MOBILE: hamburger ====== */
+const hamburger = document.querySelector(".hamburger");
+const nav = document.getElementById("site-nav");
+
+if (hamburger && nav) {
+  hamburger.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    hamburger.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+}
