@@ -1,57 +1,52 @@
 const nextBtn = document.querySelector(".next-btn");
 const prevBtn = document.querySelector(".prev-btn");
 const slides = document.querySelectorAll(".slide");
-// const searchInput = document.getElementById("searchInput");
-// const articlesList = document.getElementById("articlesList");
-// const cards = articlesList.getElementsByClassName("card");
 const numberOfSlides = slides.length;
 let slideNumber = 0;
 
+
+/* helper */
+const isMobile = () => window.matchMedia("(max-width: 768px)").matches;
+
+/* show page smoothly */
 window.addEventListener("load", () => {
   document.body.classList.add("loaded");
 });
 
-nextBtn.onclick = () => {
-  slides.forEach((slide) => {
-    slide.classList.remove("active");
+/* ====== MOBILE: hamburger ====== */
+const hamburger = document.querySelector(".hamburger");
+const nav = document.getElementById("site-nav");
+
+if (hamburger && nav) {
+  hamburger.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    hamburger.setAttribute("aria-expanded", open ? "true" : "false");
   });
+}
 
+/* ====== DESKTOP/TABLET: slider tombol next/prev ====== */
+if (nextBtn && prevBtn) {
+  nextBtn.onclick = () => {
+  if (isMobile()) return; // nonaktif di mobile
+  slides.forEach((slide) => slide.classList.remove("active"));
   slideNumber++;
-
-  if (slideNumber > numberOfSlides - 1) {
-    slideNumber = 0;
-  }
-
+  if (slideNumber > numberOfSlides - 1) slideNumber = 0;
   slides[slideNumber].classList.add("active");
 };
 
 prevBtn.onclick = () => {
-  slides.forEach((slide) => {
-    slide.classList.remove("active");
-  });
-
+  if (isMobile()) return; // nonaktif di mobile
+  slides.forEach((slide) => slide.classList.remove("active"));
   slideNumber--;
-
-  if (slideNumber < 0) {
-    slideNumber = numberOfSlides - 1;
-  }
-
+  if (slideNumber < 0) slideNumber = numberOfSlides - 1;
   slides[slideNumber].classList.add("active");
 };
 
-// searchInput.addEventListener("keyup", function () {
-//   const filter = searchInput.value.toLowerCase();
+}
 
-//   // Loop semua card
-//   Array.from(cards).forEach(card => {
-//     const title = card.querySelector("h3").textContent.toLowerCase();
-//     const description = card.querySelector("p").textContent.toLowerCase();
-
-//     // Jika teks cocok dengan judul atau deskripsi → tampilkan
-//     if (title.includes(filter) || description.includes(filter)) {
-//       card.style.display = "";
-//     } else {
-//       card.style.display = "none";
-//     }
-//   });
-// });
+/* kalau user resize dari desktop -> mobile, biar aman */
+window.addEventListener("resize", () => {
+  if (isMobile()) {
+    // pastikan tidak ada transform aktif]
+  }
+});
