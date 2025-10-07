@@ -50,7 +50,6 @@ html {
   z-index: 1;
 }
 
-
 /* Bar atas: logo + ikon */
 .top-bar {
   position: fixed;
@@ -162,5 +161,136 @@ html {
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+/* Media Queries untuk Responsiveness */
+
+/* Tablet dan layar sedang (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .header,
+  .top-bar {
+    padding: 20px 3%;
+  }
+
+  .social-media {
+    margin: 0 auto 0 20px;
+  }
+
+  .social-media a {
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+  }
+
+  .social-media a i {
+    font-size: 18px;
+  }
+
+  .content {
+    max-width: 90%;
+    padding: 2rem 2rem;
+    margin: 1rem;
+  }
+
+  .content h1 {
+    font-size: 2.2rem;
+    letter-spacing: 0.8px;
+    margin-bottom: 0.8rem;
+  }
+
+  .content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.8rem;
+    font-size: 16px; /* Pastikan font-size eksplisit untuk konsistensi */
+  }
+
+  body,
+  html {
+    overflow-x: hidden; /* Cegah scroll horizontal pada tablet */
+  }
+}
+
+/* Mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .header,
+  .top-bar {
+    padding: 15px 2%;
+    flex-direction: column; /* Stack header jika terlalu sempit */
+    align-items: flex-start;
+  }
+
+  .social-media {
+    margin: 10px auto 0 0; /* Pindah ke bawah jika diperlukan */
+    order: 2; /* Pastikan social media di bawah jika flex-direction column */
+  }
+
+  .social-media a {
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+  }
+
+  .social-media a i {
+    font-size: 16px;
+  }
+
+  .content {
+    max-width: 95%;
+    padding: 1.5rem 1.5rem;
+    margin: 0.5rem;
+    border-radius: 15px;
+  }
+
+  .content h1 {
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.6rem;
+  }
+
+  .content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+  }
+
+  .btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 14px;
+    width: 100%; /* Full width pada mobile untuk kemudahan tap */
+    max-width: 250px;
+  }
+
+  .bg-video {
+    filter: brightness(50%) blur(8px); /* Kurangi blur sedikit untuk performa mobile */
+  }
+
+  body,
+  html {
+    overflow: hidden; /* Pertahankan hidden, tapi pastikan tidak ada overflow */
+  }
+}
+
+/* Layar sangat kecil (opsional, max-width: 320px) */
+@media screen and (max-width: 320px) {
+  .content {
+    padding: 1rem 1rem;
+  }
+
+  .content h1 {
+    font-size: 1.5rem;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
   }
 }

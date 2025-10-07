@@ -214,3 +214,270 @@ h1 {
 .toast.remove {
   background: #c62828; /* merah */
 }
+
+/* Media Queries untuk Responsiveness */
+
+/* Tablet dan layar sedang (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 20px 3%;
+    flex-wrap: wrap; /* Izinkan wrap jika navbar terlalu panjang */
+  }
+
+  .social-media {
+    margin: 0 auto 0 20px;
+  }
+
+  .social-media a {
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+  }
+
+  .social-media a i {
+    font-size: 18px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+
+  h1 {
+    margin-top: 120px; /* Kurangi margin-top karena header lebih pendek */
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  #favoritesContainer {
+    gap: 15px;
+    padding: 15px;
+    max-width: 95%;
+  }
+
+  .article-card {
+    width: 300px;
+    flex: 0 0 48%; /* Dua kolom di tablet */
+  }
+
+  .article-card img {
+    height: 140px;
+  }
+
+  .article-card h3 {
+    font-size: 18px;
+    margin: 12px;
+  }
+
+  .article-card p {
+    font-size: 13px;
+    margin: 0 12px 8px 12px;
+  }
+
+  .article-card button,
+  .article-card .detail-link {
+    margin: 8px 12px;
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+
+  .article-card .detail-link {
+    margin: 0 12px 12px 12px;
+  }
+
+  #clearFavoritesBtn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .toast {
+    bottom: 20px;
+    padding: 10px 16px;
+    font-size: 13px;
+    max-width: 90%;
+    left: 5%;
+    transform: translateX(0) translateY(50px); /* Adjust untuk tidak overflow */
+  }
+
+  .toast.show {
+    transform: translateX(0) translateY(0);
+  }
+
+  body.loaded {
+    overflow-x: hidden; /* Cegah scroll horizontal pada tablet */
+  }
+}
+
+/* Mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 15px 2%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; /* Tambah gap saat stacked */
+  }
+
+  .social-media {
+    margin: 0 auto 0 0;
+    order: 2; /* Pindah ke bawah jika stacked */
+  }
+
+  .social-media a {
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+  }
+
+  .social-media a i {
+    font-size: 16px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar a {
+    font-size: 14px;
+    margin: 5px 15px; /* Kurangi margin, center */
+  }
+
+  h1 {
+    margin-top: 100px; /* Sesuaikan dengan header stacked */
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  #favoritesContainer {
+    gap: 12px;
+    padding: 10px;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .article-card {
+    width: 100%;
+    max-width: 350px; /* Full width tapi batasi max */
+    flex: 0 0 100%; /* Satu kolom di mobile */
+  }
+
+  .article-card img {
+    height: 120px;
+  }
+
+  .article-card h3 {
+    font-size: 16px;
+    margin: 10px;
+  }
+
+  .article-card p {
+    font-size: 12px;
+    margin: 0 10px 6px 10px;
+  }
+
+  .article-card button,
+  .article-card .detail-link {
+    margin: 6px 10px;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .article-card .detail-link {
+    margin: 0 10px 10px 10px;
+  }
+
+  .fav-actions {
+    margin-bottom: 15px;
+  }
+
+  #clearFavoritesBtn {
+    padding: 7px 14px;
+    font-size: 13px;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .toast {
+    bottom: 15px;
+    padding: 8px 12px;
+    font-size: 12px;
+    left: 2%;
+    width: 96%;
+    max-width: none;
+  }
+
+  .toast.show {
+    transform: translateX(0) translateY(0);
+  }
+
+  body {
+    line-height: 1.5; /
+  }
+
+  body.loaded {
+    overflow-x: hidden;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .header {
+    padding: 10px 1.5%;
+  }
+
+  .navbar a {
+    font-size: 13px;
+    margin: 5px 10px;
+  }
+
+  h1 {
+    font-size: 18px;
+    margin-top: 90px;
+  }
+
+  #favoritesContainer {
+    padding: 8px;
+    gap: 10px;
+  }
+
+  .article-card {
+    border-radius: 8px;
+  }
+
+  .article-card img {
+    height: 100px;
+  }
+
+  .article-card h3 {
+    font-size: 14px;
+    margin: 8px;
+  }
+
+  .article-card p {
+    font-size: 11px;
+    margin: 0 8px 4px 8px;
+  }
+
+  .article-card button,
+  .article-card .detail-link {
+    padding: 5px 8px;
+    font-size: 11px;
+    margin: 4px 8px;
+  }
+
+  .article-card .detail-link {
+    margin: 0 8px 8px 8px;
+  }
+
+  #clearFavoritesBtn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .toast {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+}
