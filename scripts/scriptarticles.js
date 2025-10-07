@@ -8,6 +8,10 @@ const searchInput = document.getElementById("searchInput");
 const filterButtons = document.querySelectorAll("#filterButtons button");
 const loadMoreBtn = document.getElementById("loadMoreBtn");
 
+window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
+});
+
 // Fetch data dari JSON
 fetch("data/articles.json")
   .then((res) => res.json())
@@ -87,14 +91,25 @@ function renderArticles(data, reset = false) {
 }
 
 function toggleFavorite(id) {
+  let message = "";
+  let type = "";
+
   if (favorites.includes(id)) {
     favorites = favorites.filter((fav) => fav !== id);
+    message = "Dihapus dari Favorit";
+    type = "remove";
   } else {
     favorites.push(id);
+    message = "Ditambahkan ke Favorit";
+    type = "add";
   }
+
   localStorage.setItem("favorites", JSON.stringify(favorites));
   renderArticles(articles, true);
+
+  showToast(message, type);
 }
+
 
 // Load more event
 loadMoreBtn.addEventListener("click", () => {
@@ -126,3 +141,19 @@ filterButtons.forEach((btn) => {
     }
   });
 });
+
+function showToast(message, type) {
+  const toast = document.createElement("div");
+  toast.className = `toast ${type}`;
+  toast.textContent = message;
+  document.body.appendChild(toast);
+
+  // Animasi muncul
+  setTimeout(() => toast.classList.add("show"), 100);
+
+  // Hilang setelah 2 detik
+  setTimeout(() => {
+    toast.classList.remove("show");
+    setTimeout(() => toast.remove(), 500);
+  }, 2000);
+}

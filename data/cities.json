@@ -63,15 +63,129 @@
     "sections": [
       {
         "title": "🏞 Asal-usul Nama Bogor",
-        "content": "Nama Cirebon berasal dari kata “ci” (air) dan “rebon” (udang kecil), merujuk pada daerah pesisir yang kaya hasil laut. Versi lain menyebut “Caruban” yang berarti campuran, karena Cirebon menjadi titik pertemuan budaya Sunda, Jawa, Tionghoa, dan Arab. Kondisi geografis Cirebon yang berada di pesisir utara Jawa Barat menjadikannya sebagai wilayah strategis dalam jalur perdagangan laut sejak masa kuno."
+        "content": "Nama Bogor diyakini berasal dari kata “hambogoran” dalam bahasa Sunda, yang berarti tempat berkumpul atau ramai. Ada juga yang mengaitkan dengan kata “bokor” (wadah air), atau pohon bogor yang dulunya banyak tumbuh di wilayah ini. Bogor juga dikenal sebagai Pakuan, ibu kota Kerajaan Sunda-Pajajaran. Nama Pakuan berasal dari kata “pakuwuan” yang berarti tempat tinggal raja atau pusat pemerintahan."
       },
       {
         "title": "🏛 Perkembangan Sejarah Bogor",
-        "content": "Cirebon berkembang sebagai pusat penyebaran Islam di Jawa Barat di bawah kepemimpinan Sunan Gunung Jati, sekaligus menjadi pusat kekuasaan Kesultanan Cirebon dengan berdirinya Keraton Kasepuhan, Kanoman, dan Kacirebonan. Kehidupan masyarakatnya bertumpu pada perdagangan laut, pertanian, serta kerajinan batik, sementara letaknya yang strategis menjadikan Cirebon sebagai titik pertemuan berbagai etnis, budaya, dan spiritualitas. Pada masa kolonial Belanda, Cirebon berperan sebagai pelabuhan penting dalam jalur perdagangan rempah dan batik, didukung dengan pembangunan infrastruktur seperti pelabuhan dan jalur kereta api yang menghubungkannya dengan Priangan dan Batavia. Kini, Cirebon berkembang sebagai kota budaya pesisir yang dikenal dengan industri batik megamendung serta destinasi wisata sejarah, dengan keraton dan bangunan kolonial yang tetap menjadi daya tarik utama."
+        "content": "Sejarah Bogor berakar kuat pada Masa Kerajaan, di mana ia menjadi pusat Kerajaan Sunda-Pajajaran dari abad ke-14 hingga ke-16, tempat Raja Sri Baduga Maharaja (Raja Siliwangi) berkuasa, dengan peninggalan penting berupa Situs Batu Tulis, dan masyarakatnya hidup dari pertanian dan spiritualitas Sunda yang kuat. Kemudian, pada Masa Kolonial Belanda di abad ke-19, Bogor bertransformasi menjadi kota peristirahatan elit, ditandai dengan pembangunan ikonik seperti Kebun Raya Bogor (1817) dan Istana Bogor sebagai kediaman gubernur jenderal, menjadikannya pusat penelitian botani dan jalur strategis. Kini, Bogor dikenal sebagai “Kota Hujan” yang modern, berkembang pesat sebagai pusat pendidikan, pertanian, dan pariwisata alam, dengan pesona gedung kolonial, taman kota, dan kawasan kuliner yang menjadikannya destinasi favorit bagi warga Jabodetabek."
       },
       {
         "title": "👥 Masyarakat Bogor",
-        "content": "Cirebon memiliki kekayaan etnis dan budaya yang terbentuk dari campuran Sunda, Jawa, Tionghoa, dan Arab, dengan bahasa Cirebonan yang digunakan sebagai bahasa sehari-hari. Perekonomiannya ditopang oleh perdagangan, batik, perikanan, dan sektor pariwisata yang terus berkembang. Kebudayaan Cirebon pun sangat khas, tercermin dalam tradisi keraton, seni tari topeng, gamelan, batik pesisir, hingga seni ukir yang menjadi identitas dan daya tarik utama kota ini."
+        "content": "Kota Bogor memiliki komposisi Etnis dan Budaya yang didominasi oleh etnis Sunda, namun karena letaknya yang strategis berdekatan dengan Jakarta, populasinya diperkaya oleh pendatang dari Betawi, Jawa, dan Tionghoa. Meskipun secara historis Ekonomi masyarakatnya mengandalkan pertanian dan hortikultura, kini sektor ekonomi telah berevolusi dan berkembang pesat ke arah jasa, pariwisata, kuliner, dan pendidikan. Kekayaan Kebudayaan Sunda tetap lestari, ditandai dengan masih aktifnya tradisi seperti tari jaipong, angklung, dan seni bela diri, yang juga didukung kuat oleh berbagai festival dan komunitas seni lokal yang aktif dalam pelestarian budaya."
+      }
+    ]
+  },
+  {
+    "id": "sukabumi",
+    "name": "Sukabumi",
+    "banner": "assets/cirebon.jpg",
+    "sections": [
+      {
+        "title": "🏞 Asal-usul Nama Sukabumi",
+        "content": "Nama Sukabumi berasal dari dua kata dalam bahasa Sanskerta dan Sunda, yaitu “Suka” yang berarti kesenangan atau kebahagiaan, dan “Bumi” yang berarti tanah atau tempat tinggal. Secara harfiah, Sukabumi berarti “tanah yang menyenangkan” atau “tempat yang memberi kebahagiaan”. Menurut catatan sejarah, nama Sukabumi pertama kali digunakan oleh Aria Wiratanudatar, Dalem Cianjur ke-6, sekitar abad ke-17. Beliau membuka wilayah baru di selatan Cianjur untuk pertanian dan perkebunan, dan menamainya “Sukabumi” karena keindahan alamnya yang subur dan menenangkan. Selain itu, ada juga versi lain yang menyebut nama Sukabumi muncul dari kebiasaan para pekerja perkebunan Belanda yang sering menyebut daerah itu sebagai Soekaboemi karena udaranya sejuk dan menentramkan."
+      },
+      {
+        "title": "🏛 Perkembangan Sejarah Sukabumi",
+        "content": "Sejarah Sukabumi berawal pada Masa Kerajaan sebagai bagian dari Sunda-Pajajaran, yang setelah keruntuhannya dikuasai sebagian oleh Kesultanan Banten dan Cirebon, dengan masyarakat yang hidup dari bercocok tanam dan perdagangan hasil bumi. Memasuki Masa Kolonial Belanda pada awal abad ke-18, wilayah ini dikembangkan menjadi sentra perkebunan strategis untuk teh, kopi, dan kina karena kesuburan tanahnya, yang kemudian ditandai dengan pembentukan Kabupaten Tjikole (berganti nama menjadi Kabupaten Sukabumi pada tahun 1815), menjadikannya jalur penghubung penting di Priangan dengan munculnya permukiman Eropa. Pada awal abad ke-20, Sukabumi berkembang menjadi Kota Modern yang teratur, dicirikan oleh arsitektur kolonial dan fasilitas lengkap, dan berkat udaranya yang sejuk, kota ini dikenal luas sebagai destinasi peristirahatan favorit bagi kaum elite dari Batavia."
+      },
+      {
+        "title": "👥 Masyarakat Sukabumi",
+        "content": "Sukabumi memiliki kekayaan Etnis dan Budaya yang didominasi oleh etnis Sunda dengan bahasa Sunda sebagai penanda utamanya, meskipun terdapat juga komunitas dari Jawa, Betawi, dan Tionghoa. Secara Ekonomi, yang dulunya sangat bergantung pada pertanian dan perkebunan (teh, kopi, karet), kini telah berevolusi dan berkembang pesat ke sektor pariwisata—didorong oleh potensi alam seperti Gunung Gede Pangrango, Pelabuhan Ratu, dan Geopark Ciletuh—serta sektor industri kreatif, perdagangan, dan pendidikan. Kekuatan Kebudayaan Sunda tetap terjaga, tercermin dalam tradisi seperti wayang golek, sisingaan, angklung, seni jaipongan, dan pencak silat, yang diperkaya dengan identitas kuliner khas seperti mochi Sukabumi dan nasi tutug oncom."
+      }
+    ]
+  },
+  {
+    "id": "garut",
+    "name": "Garut",
+    "banner": "assets/cirebon.jpg",
+    "sections": [
+      {
+        "title": "🏞 Asal-usul Nama Garut",
+        "content": "Nama Garut diyakini berasal dari tanaman “garut” (sejenis umbi) yang tumbuh di wilayah ini. Versi lain menyebutkan bahwa nama Garut berasal dari kata “garut” yang berarti luka, terkait legenda penguasa yang terluka saat berburu di daerah ini. Garut dikenal sebagai daerah pegunungan yang sejuk dan subur, dengan lanskap alam yang mendukung pertanian dan spiritualitas masyarakat Sunda."
+      },
+      {
+        "title": "🏛 Perkembangan Sejarah Garut",
+        "content": "Sejarah Garut dimulai pada Masa Kerajaan, di mana wilayah ini berada di bawah pengaruh Sunda dan Pajajaran, dengan masyarakat yang hidup dari bercocok tanam, beternak, serta menjalankan tradisi kepercayaan lokal. Memasuki Masa Kolonial Belanda, Garut bertransformasi menjadi kota peristirahatan elit, ditandai dengan pembangunan hotel dan vila di kawasan Cipanas dan Papandayan, serta dibukanya jalur kereta api yang strategis menghubungkan Garut dengan Bandung dan Tasikmalaya. Kini, Garut telah berkembang menjadi Kota Modern yang identik dengan produk unggulan seperti dodol, populasi domba Garut yang khas, serta kekayaan wisata alamnya, termasuk Kawah Papandayan, Situ Bagendit, dan Candi Cangkuang."
+      },
+      {
+        "title": "👥 Masyarakat Garut",
+        "content": "Garut dicirikan oleh kekayaan Etnis dan Budaya yang mayoritas didominasi oleh etnis Sunda dengan tradisi agraris dan spiritual yang mengakar kuat. Secara Ekonomi, daerah ini memiliki basis yang kuat dari sektor pertanian dan peternakan, yang kini diperkaya dan didukung oleh perkembangan sektor kuliner (terutama dodol) dan pariwisata. Kekuatan Kebudayaan lokalnya sangat menonjol, terutama melalui tradisi Domba Adu, berbagai seni tari tradisional, serta keahlian dalam kerajinan kulit"
+      }
+    ]
+  },
+  {
+    "id": "depok",
+    "name": "Depok",
+    "banner": "assets/cirebon.jpg",
+    "sections": [
+      {
+        "title": "🏞 Asal-usul Nama Depok",
+        "content": "Nama Depok berasal dari kata dalam bahasa Sunda “padepokan” atau tempat pertapaan. Versi lain menyebutkan bahwa nama ini berasal dari komunitas Kristen pribumi yang mendirikan pemukiman di wilayah ini pada abad ke-18, dipimpin oleh Cornelis Chastelein. Depok dulunya merupakan wilayah swasta yang dikelola secara mandiri oleh keturunan Chastelein, sebelum akhirnya bergabung dengan wilayah administratif Hindia Belanda."
+      },
+      {
+        "title": "🏛 Perkembangan Sejarah Depok",
+        "content": "Sejarah Depok dimulai pada Masa Kolonial Awal tahun 1696, ketika Cornelis Chastelein membeli tanah dan membebaskan budaknya, membentuk komunitas Kristen pribumi yang mandiri dengan sistem pemerintahan dan gereja lokalnya sendiri. Keunikan ini berlanjut pada Masa Kolonial Belanda, di mana Depok menikmati status semi-otonom yang dikenal sebagai “Republik Depok”, sebelum kemudian diintegrasikan ke dalam sistem administratif kolonial. Kini, Depok telah berkembang pesat menjadi Kota Modern dan kota satelit Jakarta yang dinamis, dikenal luas sebagai pusat pendidikan utama dengan kehadiran Universitas Indonesia, serta memiliki kawasan Margonda sebagai pusat aktivitas ekonomi dan gaya hidup urban."
+      },
+      {
+        "title": "👥 Masyarakat Depok",
+        "content": "Depok memiliki keragaman Etnis dan Budaya yang unik, merupakan perpaduan antara Betawi, Sunda, Jawa, dan menariknya, terdapat komunitas keturunan Belanda yang masih lestari. Secara Ekonomi, kota ini tumbuh pesat dan sangat bergantung pada sektor pendidikan (didukung oleh universitas besar), jasa, perdagangan, dan properti sebagai kota satelit. Kehidupan Kebudayaannya pun dinamis, di mana tradisi Betawi dan Kristen lokal hidup berdampingan dengan kuatnya budaya urban modern, dengan adanya upaya aktif dalam pelestarian sejarah komunitas Depok Lama yang menjadi identitas khas kota."
+      }
+    ]
+  },
+  {
+    "id": "kuningan",
+    "name": "Kuningan",
+    "banner": "assets/cirebon.jpg",
+    "sections": [
+      {
+        "title": "🏞 Asal-usul Nama Kuningan",
+        "content": "Nama Kuningan diyakini berasal dari kata “kuning” yang merujuk pada warna emas, atau dari nama tokoh Adipati Kuningan yang berperan dalam penyebaran Islam di wilayah ini. Kuningan juga dikaitkan dengan kata “kuningan” sebagai simbol kemakmuran dan spiritualitas."
+      },
+      {
+        "title": "🏛 Perkembangan Sejarah Kuningan",
+        "content": "Sejarah Kuningan berakar sejak Masa Kerajaan, di mana wilayah ini berada di bawah pengaruh Galuh dan Pajajaran, dengan masyarakat yang hidup dari pertanian dan spiritualitas lokal, bahkan menjadi lokasi penting bagi penyebaran Islam yang dipelopori oleh tokoh seperti Syekh Maulana Arifin. Memasuki Masa Kolonial Belanda, Kuningan bertransformasi dengan dibukanya jalur transportasi dan perkebunan, menjadikannya penghasil utama kopi dan teh, serta jalur penghubung strategis antara Cirebon dan Majalengka. Kini, Kuningan telah berkembang menjadi Kota Modern yang identik dengan potensi wisata alam yang luar biasa, meliputi Telaga Remis, Gunung Ciremai, dan Taman Nasional, seraya tetap aktif dalam upaya pelestarian budaya dan pengembangan pendidikan."
+      },
+      {
+        "title": "👥 Masyarakat Kuningan",
+        "content": "Kuningan dicirikan oleh Etnis dan Budaya yang kuat, dengan mayoritas penduduknya adalah etnis Sunda yang masih memegang teguh tradisi spiritual dan agraris. Secara Ekonomi, daerah ini memiliki basis yang solid di sektor pertanian, yang kini didukung dan diperkuat oleh perkembangan pariwisata, kerajinan, dan pendidikan. Kekayaan Kebudayaan lokalnya sangat menonjol dan lestari, tercermin dalam tradisi unik seperti pacuan kuda, berbagai seni tari tradisional, serta warisan budaya agraris yang mendalam, yang dirayakan melalui festival-festival lokal."
+      }
+    ]
+  },
+  {
+    "id": "karawang",
+    "name": "Karawang",
+    "banner": "assets/cirebon.jpg",
+    "sections": [
+      {
+        "title": "🏞 Asal-usul Nama Karawang",
+        "content": "Nama Karawang diyakini berasal dari kata dalam bahasa Sunda “karawaan” atau “rawa”, yang berarti daerah berawa-rawa atau tanah yang tergenang air. Hal ini sesuai dengan kondisi geografis wilayah Karawang pada masa lampau yang dipenuhi rawa, sungai, dan sawah luas. Seiring waktu, sebutan “Karawaan” berubah menjadi Karawang. Ada juga versi lain yang menyebutkan nama Karawang berasal dari kata “kera” (monyet) dan “awang” (lapang), menggambarkan wilayah hutan lebat tempat banyak monyet hidup di dataran luas sebelum menjadi daerah pertanian seperti sekarang."
+      },
+      {
+        "title": "🏛 Perkembangan Sejarah Karawang",
+        "content": "Sejarah Karawang berawal sejak Masa Kerajaan, menjadi wilayah penting Tarumanegara (abad ke-5 M) dan kemudian Sunda-Pajajaran sebagai jalur perdagangan dan pertanian yang strategis di pesisir utara, sebelum akhirnya berada di bawah pengaruh Kesultanan Cirebon dan Banten. Memasuki Masa Kolonial Belanda pada abad ke-17, Karawang ditetapkan sebagai wilayah administrasi teratur (sejak 1633) dan dikembangkan menjadi 'Kota Lumbung Padi' terbesar di Jawa Barat melalui pengembangan irigasi dan sistem persawahan, disamping perkebunan tebu dan indigo. Kota ini juga memegang peranan krusial dalam Era Pergerakan dan Kemerdekaan, ditandai dengan Peristiwa Rengasdengklok pada 16 Agustus 1945. Memasuki Era Modern, Karawang telah bertransformasi menjadi salah satu kawasan industri terbesar di Asia Tenggara dengan berdirinya kawasan industri seperti KIIC, yang berkembang pesat berkat lokasinya di jalur Pantura, sambil tetap teguh mempertahankan perannya sebagai sentra produksi beras nasional."
+      },
+      {
+        "title": "👥 Masyarakat Karawang",
+        "content": "Karawang memiliki keragaman Etnis dan Budaya yang dinamis; meski mayoritas penduduknya adalah etnis Sunda dengan dialek utara yang khas, perkembangan industri dan urbanisasi telah menarik banyak pendatang dari Jawa, Betawi, Minang, dan Tionghoa. Secara Ekonomi, kota ini unik karena masih mempertahankan basis kuat di sektor pertanian (padi), namun kini didominasi oleh sektor industri manufaktur, otomotif, logistik, dan perdagangan, menjadikannya salah satu motor penggerak ekonomi utama Jawa Barat. Kekuatan Kebudayaan lokalnya tetap lestari, ditunjukkan melalui seni pertunjukan Sunda seperti wayang golek, jaipongan, dan topeng banjet, tradisi agraris yang diwujudkan dalam upacara adat Seren Taun, serta kekhasan kuliner seperti dodol Karawang dan pepes jambal roti."
+      }
+    ]
+  },
+  {
+    "id": "cianjur",
+    "name": "Cianjur",
+    "banner": "assets/cirebon.jpg",
+    "sections": [
+      {
+        "title": "🏞 Asal-usul Nama Cianjur",
+        "content": "Nama Cianjur berasal dari dua kata dalam bahasa Sunda, yaitu “ci” yang berarti air atau sungai, dan “anjur” yang berarti mengalir dengan deras. Secara harfiah, Cianjur berarti air yang mengalir deras atau sungai yang kuat arusnya. Nama ini diyakini mengacu pada banyaknya aliran sungai dan mata air yang mengalir dari kaki Gunung Gede dan Gunung Pangrango melewati wilayah ini. Versi lain menyebut bahwa kata “anjur” berasal dari nama tokoh atau tempat di masa lampau, namun pendapat ini kurang populer dibandingkan versi etimologis yang terkait dengan kondisi alam wilayahnya yang berair dan subur."
+      },
+      {
+        "title": "🏛 Perkembangan Sejarah Cianjur",
+        "content": "Sejarah Cianjur berawal sejak Masa Kerajaan sebagai bagian dari Sunda-Pajajaran, yang setelah keruntuhannya pada abad ke-16 berada di bawah pengaruh Kesultanan Banten, dan menjadi daerah pertanian strategis di jalur pegunungan. Cikal bakal pemerintahan formal dimulai sekitar abad ke-17 dengan berdirinya pemerintahan lokal yang dipimpin oleh Aria Wiratanudatar (Dalem Cikundul), yang kemudian memindahkan pusat pemerintahannya ke lokasi yang kini menjadi pusat Kota Cianjur. Memasuki Masa Kolonial Belanda pada abad ke-18 dan 19, Cianjur dikembangkan sebagai pusat pertanian dan perkebunan komoditas unggulan seperti padi, teh, dan kopi, menjadikannya terkenal dengan julukan 'Kota Santri dan Kota Beras,' dan semakin penting setelah dilalui oleh Jalan Raya Pos (De Grote Postweg). Pada Era Pergerakan Nasional, Cianjur turut berperan aktif dalam perjuangan kemerdekaan. Kini, Cianjur telah berkembang menjadi Kota Modern yang tetap mempertahankan karakter pedesaannya, dengan banyak peninggalan kolonial dan peran penting dalam bidang pendidikan Islam dan pertanian di Jawa Barat."
+      },
+      {
+        "title": "👥 Masyarakat Cianjur",
+        "content": "Cianjur dicirikan oleh kekayaan Etnis dan Budaya yang didominasi oleh etnis Sunda, dengan dialek yang dikenal sangat halus dan sopan (basa lemes), meskipun terdapat juga komunitas dari Jawa, Betawi, dan Tionghoa. Secara Ekonomi, basis utamanya adalah sektor pertanian dan perkebunan—menghasilkan padi berkualitas, teh, kopi, dan sayuran—ditambah potensi perikanan dan pariwisata alam di wilayah selatan, serta kawasan Cipanas yang populer sebagai daerah wisata dan peristirahatan. Kekuatan Kebudayaan Sundanya sangat khas dan lestari, tercermin dalam mamaos Cianjuran (tembang Sunda), pencak silat, degung, dan upacara adat Seren Taun, yang diperkaya oleh kuliner ikonik seperti manisan dan tauco Cianjur."
       }
     ]
   }

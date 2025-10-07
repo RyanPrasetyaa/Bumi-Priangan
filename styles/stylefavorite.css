@@ -9,6 +9,19 @@ body {
   background: #231c07;
   color: #fff;
   line-height: 1.6;
+  overflow-y: hidden;
+  opacity: 0;
+  animation: fadeIn 0.7s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+body.loaded {
+  overflow-y: auto;
 }
 
 .header {
@@ -77,8 +90,9 @@ h1 {
 
 /* === Container & Cards === */
 #favoritesContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   max-width: 1100px;
   margin: 0 auto 50px auto;
@@ -94,6 +108,8 @@ h1 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
+  width: 350px;
+  flex: 0 0 auto;
 }
 
 .article-card:hover {
@@ -149,4 +165,52 @@ h1 {
 
 .article-card .detail-link:hover {
   background: #1b5e20;
+}
+
+.fav-actions {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#clearFavoritesBtn {
+  background: #d32f2f;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#clearFavoritesBtn:hover {
+  background: #9a0007;
+}
+
+/* Toast notification */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(50px);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  opacity: 0;
+  transition: all 0.4s ease;
+  z-index: 9999;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.toast.add {
+  background: #2e7d32; /* hijau */
+}
+
+.toast.remove {
+  background: #c62828; /* merah */
 }

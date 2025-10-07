@@ -5,6 +5,22 @@
     font-family: "Montserrat", sans-serif;
 }
 
+body {
+  overflow-y: hidden;
+  opacity: 0;
+  animation: fadeIn 0.7s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+body.loaded {
+  overflow-y: auto;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -56,8 +72,7 @@
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.navbar a:hover,
-.navbar a.active {
+.navbar a:hover {
   text-decoration: underline;
 }
 
@@ -120,7 +135,7 @@
 
 /* --- Card Artikel --- */
 .articles-section {
-  background: #5B714D;
+  background: #2D3319;
 }
 
 main {
@@ -261,4 +276,34 @@ main {
 
 #loadMoreBtn:active {
   transform: translateY(0);
+}
+
+/* Toast notification */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(50px);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  opacity: 0;
+  transition: all 0.4s ease;
+  z-index: 9999;
+}
+
+/* Animasi muncul */
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Warna sesuai jenis */
+.toast.add {
+  background: #2e7d32; /* hijau */
+}
+
+.toast.remove {
+  background: #c62828; /* merah */
 }

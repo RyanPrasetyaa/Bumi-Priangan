@@ -5,6 +5,10 @@ const articleId = parseInt(params.get("id"));
 // Ambil daftar favorit dari localStorage (array of id)
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
+window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
+});
+
 // Ambil data artikel dari JSON
 fetch("data/articles.json")
   .then((res) => res.json())
