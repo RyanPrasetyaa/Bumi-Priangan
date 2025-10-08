@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- ==== META & PAGE SETUP ==== -->
+    <!-- Character encoding and responsive viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page title shown on the browser tab -->
     <title>Artikel - Bumi Priangan</title>
+
+    <!-- ==== STYLES & FONTS ==== -->
+    <!-- Main stylesheet for the Articles listing page -->
     <link rel="stylesheet" href="styles/stylearticles.css" />
+    <!-- Google Font for consistent typography across pages -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Favicon (icon displayed in the browser tab) -->
+    <link rel="icon" type="image/png" href="assets/favicon.svg"/>
   </head>
+
   <body>
+    <!-- ===== HEADER SECTION ===== -->
+    <!-- Top navigation bar containing hamburger (mobile), logo, social icons, and primary nav -->
     <header class="header">
+      <!-- Mobile hamburger button to toggle primary navigation -->
       <button class="hamburger" aria-label="Buka menu" aria-expanded="false" aria-controls="site-nav">
         <span></span><span></span><span></span>
       </button>
 
+      <!-- Site logo linking back to homepage -->
       <a href="home.html" class="logo" aria-label="Beranda Bumi Priangan">
         <img src="assets/BUMI-PRIANGAN.png" alt="BUMI PRIANGAN" width="230" />
       </a>
 
+      <!-- Social media links (icons only) -->
       <div class="social-media">
         <a href="https://heylink.me/ryanbong606/" aria-label="Instagram"><img src="assets/instagram.png" alt="Instagram" width="30" /></a>
         <a href="https://github.com/RyanPrasetyaa/Bumi-Priangan.git" aria-label="Github"><img src="assets/github.png" alt="Github" width="30" /></a>
         <a href="https://heylink.me/ryanbong606/" aria-label="Email"><img src="assets/mail.png" alt="Email" width="30" /></a>
       </div>
 
+      <!-- Primary site navigation -->
       <nav class="navbar" id="site-nav" aria-label="Navigasi utama">
         <a href="home.html">Beranda</a>
         <a href="articles.html">Artikel</a>
@@ -34,10 +51,16 @@
       </nav>
     </header>
 
-    <!-- Section Header Artikel -->
+    <!-- ===== ARTICLES HEADER (HERO) ===== -->
+    <!-- Contains the page title, search input, and city filter buttons -->
     <section class="articles-header">
+      <!-- Page heading -->
       <h1>Semua Artikel</h1>
+
+      <!-- Client-side search box for filtering articles by text -->
       <input type="text" id="searchInput" placeholder="Cari artikel..." />
+
+      <!-- City filter buttons (dataset used by JS to filter by 'city') -->
       <div id="filterButtons">
         <button data-city="all">Semua</button>
         <button data-city="Bandung">Bandung</button>
@@ -49,20 +72,24 @@
         <button data-city="Depok">Depok</button>
         <button data-city="Kuningan">Kuningan</button>
         <button data-city="SukaBumi">Sukabumi</button>
-         <button data-city="Karawang">Karawang</button>
-
-
+        <button data-city="Karawang">Karawang</button>
       </div>
     </section>
 
-    <!-- Container Artikel -->
+    <!-- ===== ARTICLES LISTING ===== -->
+    <!-- Grid container for article cards + Load more control -->
     <section class="articles-section">
+      <!-- Articles will be rendered here by scriptarticles.js -->
       <main id="articlesContainer"></main>
+
+      <!-- Progressive loading button for additional items -->
       <div class="loadMoreWrapper">
         <button id="loadMoreBtn">Lebih Banyak</button>
       </div>
     </section>
 
+    <!-- ===== SCRIPTS ===== -->
+    <!-- Handles fetching, filtering, search, and "load more" behavior -->
     <script src="scripts/scriptarticles.js"></script>
   </body>
 </html>

@@ -1,3 +1,7 @@
+/* ==========================================================
+   GLOBAL RESET & BASE STYLES
+   Reset margin, padding, and apply Montserrat font globally
+========================================================== */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +9,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/* ==========================================================
+   BODY & PAGE FADE-IN
+   Base colors, animation for smooth appearance on load
+========================================================== */
 body {
   background: #231c07;
   color: #fff;
@@ -14,16 +22,22 @@ body {
   animation: fadeIn 0.7s ease forwards;
 }
 
+/* --- Keyframes for fade-in effect --- */
 @keyframes fadeIn {
   to {
     opacity: 1;
   }
 }
 
+/* Enable scrolling after fade animation completes */
 body.loaded {
   overflow-y: auto;
 }
 
+/* ==========================================================
+   HEADER SECTION
+   Fixed transparent header with logo, social icons, and navbar
+========================================================== */
 .header {
   position: fixed;
   top: 0;
@@ -36,6 +50,7 @@ body.loaded {
   z-index: 100;
 }
 
+/* --- Social Media Icons --- */
 .social-media {
   margin: 0 auto 0 50px;
 }
@@ -66,6 +81,7 @@ body.loaded {
   color: #444;
 }
 
+/* --- Navigation Links --- */
 .navbar a {
   font-size: 18px;
   color: #fff;
@@ -80,15 +96,22 @@ body.loaded {
   text-decoration: underline;
 }
 
+/* ==========================================================
+   PAGE TITLE
+   Centered heading with margin to avoid header overlap
+========================================================== */
 h1 {
   text-align: center;
-  margin-top: 140px; /* biar ga ketutup header */
+  margin-top: 140px;
   margin-bottom: 20px;
   font-size: 32px;
   color: #ffd369;
 }
 
-/* === Container & Cards === */
+/* ==========================================================
+   FAVORITE ARTICLES CONTAINER & CARDS
+   Grid-style layout for saved articles
+========================================================== */
 #favoritesContainer {
   display: flex;
   flex-wrap: wrap;
@@ -99,6 +122,7 @@ h1 {
   padding: 20px;
 }
 
+/* --- Individual article card layout --- */
 .article-card {
   background: #fff;
   color: #333;
@@ -112,17 +136,20 @@ h1 {
   flex: 0 0 auto;
 }
 
+/* --- Hover animation for card --- */
 .article-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.25);
 }
 
+/* --- Card image styling --- */
 .article-card img {
   width: 100%;
   height: 160px;
   object-fit: cover;
 }
 
+/* --- Article title & description --- */
 .article-card h3 {
   font-size: 20px;
   margin: 15px;
@@ -135,7 +162,10 @@ h1 {
   color: #555;
 }
 
-/* Tombol & link */
+/* ==========================================================
+   CARD BUTTONS & LINKS
+   Manage favorites and open detail page
+========================================================== */
 .article-card button {
   margin: 10px 15px;
   padding: 8px 14px;
@@ -167,6 +197,9 @@ h1 {
   background: #1b5e20;
 }
 
+/* ==========================================================
+   CLEAR ALL FAVORITES BUTTON
+========================================================== */
 .fav-actions {
   text-align: center;
   margin-bottom: 20px;
@@ -187,7 +220,10 @@ h1 {
   background: #9a0007;
 }
 
-/* Toast notification */
+/* ==========================================================
+   TOAST NOTIFICATION
+   Small popup feedback for favorite actions
+========================================================== */
 .toast {
   position: fixed;
   bottom: 30px;
@@ -208,14 +244,16 @@ h1 {
 }
 
 .toast.add {
-  background: #2e7d32; /* hijau */
+  background: #2e7d32; /* green */
 }
 
 .toast.remove {
-  background: #c62828; /* merah */
+  background: #c62828; /* red */
 }
 
-/* ===== HAMBURGER ===== */
+/* ==========================================================
+   HAMBURGER MENU (Hidden on Desktop)
+========================================================== */
 .hamburger {
   display: none;             
   width: 40px;
@@ -238,8 +276,11 @@ h1 {
   transition: all 0.3s ease;
 }
 
-/* Tablet dan layar sedang (max-width: 768px) */
+/* ==========================================================
+   RESPONSIVE DESIGN: TABLET (≤768px)
+========================================================== */
 @media screen and (max-width: 768px) {
+  /* --- Adjusted header layout --- */
   .header {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -252,19 +293,11 @@ h1 {
     backdrop-filter: blur(6px);
   }
 
-  .hamburger { 
-    display: inline-flex; 
-  }
-  
-  .logo { 
-    justify-self: center; 
-  }
+  .hamburger { display: inline-flex; }
+  .logo { justify-self: center; }
+  .logo img { width: 160px; height: auto; }
 
-  .logo img { 
-    width: 160px; 
-    height: auto; 
-  }
-
+  /* --- Compact social layout --- */
   .social-media {
     margin: 0;
     display: flex;
@@ -273,15 +306,12 @@ h1 {
     justify-self: end;
   }
 
-  .social-media a { 
-    width: 28px; 
-    height: 28px; 
-  }
+  .social-media a { width: 28px; height: 28px; }
 
-  /* Navbar dropdown menempel di bawah header */
+  /* --- Dropdown navbar --- */
   .navbar {
     position: fixed;
-    top: 60px;           /* kira-kira tinggi header di mobile */
+    top: 60px;
     left: 0; right: 0;
     z-index: 120;
     display: none;
@@ -290,15 +320,13 @@ h1 {
     background: rgba(17,17,17,0.95);
     border-bottom: 1px solid rgba(255,255,255,0.15);
   }
+
   .navbar.open { display: flex; }
   .navbar a { margin: 10px 0; font-size: 16px; }
 
-  .body {
-    padding-top: 100px;
-  }
-
+  /* --- Adjust heading and layout for tablets --- */
   h1 {
-    margin-top: 120px; /* Kurangi margin-top karena header lebih pendek */
+    margin-top: 120px;
     font-size: 26px;
     margin-bottom: 15px;
   }
@@ -311,118 +339,25 @@ h1 {
 
   .article-card {
     width: 300px;
-    flex: 0 0 48%; /* Dua kolom di tablet */
-  }
-
-  .article-card img {
-    height: 140px;
-  }
-
-  .article-card h3 {
-    font-size: 18px;
-    margin: 12px;
-  }
-
-  .article-card p {
-    font-size: 13px;
-    margin: 0 12px 8px 12px;
-  }
-
-  .article-card button,
-  .article-card .detail-link {
-    margin: 8px 12px;
-    padding: 7px 12px;
-    font-size: 13px;
-  }
-
-  .article-card .detail-link {
-    margin: 0 12px 12px 12px;
-  }
-
-  #clearFavoritesBtn {
-    padding: 8px 16px;
-    font-size: 14px;
+    flex: 0 0 48%; /* Two columns on tablet */
   }
 
   .toast {
     bottom: 20px;
-    padding: 10px 16px;
     font-size: 13px;
     max-width: 90%;
-    left: 5%;
-    transform: translateX(0) translateY(50px); /* Adjust untuk tidak overflow */
   }
 
-  .toast.show {
-    transform: translateX(0) translateY(0);
-  }
-
-  body.loaded {
-    overflow-x: hidden; /* Cegah scroll horizontal pada tablet */
-  }
+  body.loaded { overflow-x: hidden; }
 }
 
-/* Mobile (max-width: 480px) */
+/* ==========================================================
+   MOBILE VIEW (≤480px)
+   Single-column layout, smaller text and buttons
+========================================================== */
 @media screen and (max-width: 480px) {
-  .body {
-    padding-top: 130px;
-  }
-  
-  .header {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 1000;
-    display: grid;
-    grid-template-columns: 44px 1fr 44px;
-    align-items: center;
-    padding: 12px 14px;
-    background: rgba(0,0,0,0.35);
-    backdrop-filter: blur(6px);
-  }
-
-  .hamburger { 
-    display: inline-flex; 
-  }
-  
-  .logo { 
-    justify-self: center; 
-  }
-
-  .logo img { 
-    width: 160px; 
-    height: auto; 
-  }
-
-  .social-media {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    justify-self: end;
-  }
-
-  .social-media a { 
-    width: 25px; 
-    height: 25px; 
-  }
-
-  /* Navbar dropdown menempel di bawah header */
-  .navbar {
-    position: fixed;
-    top: 60px;           /* kira-kira tinggi header di mobile */
-    left: 0; right: 0;
-    z-index: 120;
-    display: none;
-    flex-direction: column;
-    padding: 12px 16px 16px;
-    background: rgba(17,17,17,0.95);
-    border-bottom: 1px solid rgba(255,255,255,0.15);
-  }
-  .navbar.open { display: flex; }
-  .navbar a { margin: 10px 0; font-size: 16px; }
-
   h1 {
-    margin-top: 130px; /* Sesuaikan dengan header stacked */
+    margin-top: 130px;
     font-size: 22px;
     margin-bottom: 12px;
   }
@@ -431,43 +366,17 @@ h1 {
     gap: 12px;
     padding: 10px;
     max-width: 100%;
-    justify-content: center;
   }
 
   .article-card {
     width: 100%;
-    max-width: 350px; /* Full width tapi batasi max */
-    flex: 0 0 100%; /* Satu kolom di mobile */
+    max-width: 350px;
+    flex: 0 0 100%; /* One column layout */
   }
 
-  .article-card img {
-    height: 120px;
-  }
-
-  .article-card h3 {
-    font-size: 16px;
-    margin: 10px;
-  }
-
-  .article-card p {
-    font-size: 12px;
-    margin: 0 10px 6px 10px;
-  }
-
-  .article-card button,
-  .article-card .detail-link {
-    margin: 6px 10px;
-    padding: 6px 10px;
-    font-size: 12px;
-  }
-
-  .article-card .detail-link {
-    margin: 0 10px 10px 10px;
-  }
-
-  .fav-actions {
-    margin-bottom: 15px;
-  }
+  .article-card img { height: 120px; }
+  .article-card h3 { font-size: 16px; }
+  .article-card p { font-size: 12px; }
 
   #clearFavoritesBtn {
     padding: 7px 14px;
@@ -480,81 +389,25 @@ h1 {
     bottom: 15px;
     padding: 8px 12px;
     font-size: 12px;
-    left: 2%;
     width: 96%;
-    max-width: none;
   }
 
-  .toast.show {
-    transform: translateX(0) translateY(0);
-  }
-
-  body {
-    line-height: 1.5; /
-  }
-
-  body.loaded {
-    overflow-x: hidden;
-  }
+  body.loaded { overflow-x: hidden; }
 }
 
-
+/* ==========================================================
+   EXTRA SMALL DEVICES (≤320px)
+   Very compact layout adjustments
+========================================================== */
 @media screen and (max-width: 320px) {
-  .header {
-    padding: 10px 1.5%;
-  }
-
-  .navbar a {
-    font-size: 13px;
-    margin: 5px 10px;
-  }
-
-  h1 {
-    font-size: 18px;
-    margin-top: 90px;
-  }
-
-  #favoritesContainer {
-    padding: 8px;
-    gap: 10px;
-  }
-
-  .article-card {
-    border-radius: 8px;
-  }
-
-  .article-card img {
-    height: 100px;
-  }
-
-  .article-card h3 {
-    font-size: 14px;
-    margin: 8px;
-  }
-
-  .article-card p {
-    font-size: 11px;
-    margin: 0 8px 4px 8px;
-  }
-
-  .article-card button,
-  .article-card .detail-link {
-    padding: 5px 8px;
-    font-size: 11px;
-    margin: 4px 8px;
-  }
-
-  .article-card .detail-link {
-    margin: 0 8px 8px 8px;
-  }
-
-  #clearFavoritesBtn {
-    padding: 6px 12px;
-    font-size: 12px;
-  }
-
-  .toast {
-    padding: 6px 10px;
-    font-size: 11px;
-  }
+  .header { padding: 10px 1.5%; }
+  .navbar a { font-size: 13px; margin: 5px 10px; }
+  h1 { font-size: 18px; margin-top: 90px; }
+  #favoritesContainer { padding: 8px; gap: 10px; }
+  .article-card { border-radius: 8px; }
+  .article-card img { height: 100px; }
+  .article-card h3 { font-size: 14px; }
+  .article-card p { font-size: 11px; }
+  #clearFavoritesBtn { font-size: 12px; }
+  .toast { font-size: 11px; }
 }

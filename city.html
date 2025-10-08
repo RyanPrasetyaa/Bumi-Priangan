@@ -1,52 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- ==== META & BASIC CONFIGURATION ==== -->
+  <!-- Character encoding and viewport settings for responsiveness -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page title shown in browser tab -->
   <title>Kota - BUMI PRIANGAN</title>
+
+  <!-- ==== STYLES & FONTS ==== -->
+  <!-- Main stylesheet for city page -->
   <link rel="stylesheet" href="styles/stylecity.css" />
+  <!-- Google Font: Montserrat for consistent typography -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <!-- Website favicon (logo displayed on browser tab) -->
+  <link rel="icon" type="image/png" href="assets/favicon.svg"/>
 </head>
+
 <body>
-  <!-- ===== HEADER ===== -->
+  <!-- ===== HEADER SECTION ===== -->
+  <!-- Contains site logo, navigation links, and social media icons -->
   <header class="header">
+    <!-- Hamburger button for toggling mobile navigation -->
     <button class="hamburger" aria-label="Buka menu" aria-expanded="false" aria-controls="site-nav">
-        <span></span><span></span><span></span>
-      </button>
+      <span></span><span></span><span></span>
+    </button>
 
-      <a href="home.html" class="logo" aria-label="Beranda Bumi Priangan">
-        <img src="assets/BUMI-PRIANGAN.png" alt="BUMI PRIANGAN" width="230" />
+    <!-- Website logo linking back to homepage -->
+    <a href="home.html" class="logo" aria-label="Beranda Bumi Priangan">
+      <img src="assets/BUMI-PRIANGAN.png" alt="BUMI PRIANGAN" width="230" />
+    </a>
+
+    <!-- Social media links (Instagram, Github, Email) -->
+    <div class="social-media">
+      <a href="https://heylink.me/ryanbong606/" aria-label="Instagram">
+        <img src="assets/instagram.png" alt="Instagram" width="30" />
       </a>
+      <a href="https://github.com/RyanPrasetyaa/Bumi-Priangan.git" aria-label="Github">
+        <img src="assets/github.png" alt="Github" width="30" />
+      </a>
+      <a href="https://heylink.me/ryanbong606/" aria-label="Email">
+        <img src="assets/mail.png" alt="Email" width="30" />
+      </a>
+    </div>
 
-      <div class="social-media">
-        <a href="https://heylink.me/ryanbong606/" aria-label="Instagram"><img src="assets/instagram.png" alt="Instagram" width="30" /></a>
-        <a href="https://github.com/RyanPrasetyaa/Bumi-Priangan.git" aria-label="Github"><img src="assets/github.png" alt="Github" width="30" /></a>
-        <a href="https://heylink.me/ryanbong606/" aria-label="Email"><img src="assets/mail.png" alt="Email" width="30" /></a>
-      </div>
-
-      <nav class="navbar" id="site-nav" aria-label="Navigasi utama">
-        <a href="home.html">Beranda</a>
-        <a href="articles.html">Artikel</a>
-        <a href="about.html">Tentang</a>
-        <a href="favorite.html">Favorit</a>
-      </nav>
+    <!-- Main navigation menu -->
+    <nav class="navbar" id="site-nav" aria-label="Navigasi utama">
+      <a href="home.html">Beranda</a>
+      <a href="articles.html">Artikel</a>
+      <a href="about.html">Tentang</a>
+      <a href="favorite.html">Favorit</a>
+    </nav>
   </header>
 
-  <!-- ===== KONTEN KOTA ===== -->
+  <!-- ===== MAIN CITY CONTENT ===== -->
   <main class="city-page">
-    <!-- Banner (judul akan tampil di overlay banner) -->
+    <!-- ==== City Banner Section ==== -->
+    <!-- This section dynamically displays the city banner background and title -->
     <section class="city-banner" id="cityBanner"></section>
 
-    <!-- Deskripsi -->
+    <!-- ==== City Description Section ==== -->
+    <!-- Contains general information and description of the selected city -->
     <section class="city-info" id="cityInfo"></section>
 
-    <!-- Artikel terkait -->
+    <!-- ==== Related Articles Section ==== -->
+    <!-- Displays articles related to the selected city -->
     <section class="city-articles">
       <h2>Artikel tentang kota ini</h2>
       <div id="cityArticles" class="articles-list"></div>
     </section>
   </main>
 
+  <!-- ===== JAVASCRIPT SCRIPT ===== -->
+  <!-- External JS file responsible for dynamic data loading and interactions -->
   <script src="scripts/scriptcity.js"></script>
 </body>
 </html>

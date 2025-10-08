@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- ==== META & PAGE SETUP ==== -->
+  <!-- Character encoding and responsive viewport -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page title shown on the browser tab -->
   <title>Favorit - Bumi Priangan</title>
+
+  <!-- ==== STYLES & FONTS ==== -->
+  <!-- Main stylesheet for the Favorites page -->
   <link rel="stylesheet" href="styles/stylefavorite.css" />
+  <!-- Google Font for consistent typography -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <!-- Favicon (icon displayed on the browser tab) -->
+  <link rel="icon" type="image/png" href="assets/favicon.svg"/>
 </head>
+
 <body>
+  <!-- ===== HEADER SECTION ===== -->
+  <!-- Top navigation bar: hamburger (mobile), logo, social icons, and primary nav -->
   <header class="header">
+    <!-- Mobile hamburger button to toggle navigation -->
     <button class="hamburger" aria-label="Buka menu" aria-expanded="false" aria-controls="site-nav">
         <span></span><span></span><span></span>
       </button>
 
+      <!-- Site logo linking back to homepage -->
       <a href="home.html" class="logo" aria-label="Beranda Bumi Priangan">
         <img src="assets/BUMI-PRIANGAN.png" alt="BUMI PRIANGAN" width="230" />
       </a>
 
+      <!-- Social media links (icons only) -->
       <div class="social-media">
         <a href="https://heylink.me/ryanbong606/" aria-label="Instagram"><img src="assets/instagram.png" alt="Instagram" width="30" /></a>
         <a href="https://github.com/RyanPrasetyaa/Bumi-Priangan.git" aria-label="Github"><img src="assets/github.png" alt="Github" width="30" /></a>
         <a href="https://heylink.me/ryanbong606/" aria-label="Email"><img src="assets/mail.png" alt="Email" width="30" /></a>
       </div>
 
+      <!-- Primary site navigation -->
       <nav class="navbar" id="site-nav" aria-label="Navigasi utama">
         <a href="home.html">Beranda</a>
         <a href="articles.html">Artikel</a>
@@ -31,13 +48,19 @@
       </nav>
   </header>
 
+  <!-- ===== PAGE TITLE & ACTIONS ===== -->
+  <!-- Title of the page and bulk action for clearing all favorites -->
   <h1>Artikel Favorit</h1>
   <div class="fav-actions">
     <button id="clearFavoritesBtn">Hapus Semua Favorit</button>
   </div>
 
+  <!-- ===== FAVORITES LIST CONTAINER ===== -->
+  <!-- Cards will be injected here dynamically by scriptfavorite.js -->
   <main id="favoritesContainer"></main>
 
+  <!-- ===== SCRIPTS ===== -->
+  <!-- Handles rendering, clearing favorites, and interactions -->
   <script src="scripts/scriptfavorite.js"></script>
 </body>
 </html>

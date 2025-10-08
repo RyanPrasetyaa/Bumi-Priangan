@@ -1,3 +1,7 @@
+/* ==========================================================
+   GLOBAL STYLES
+   Base layout reset and font configuration
+========================================================== */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +9,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/* ==========================================================
+   BODY SETUP
+   Background, animation, and page transition
+========================================================== */
 body {
   background: #231c07;
   color: #333;
@@ -14,16 +22,22 @@ body {
   animation: fadeIn 0.7s ease forwards;
 }
 
+/* --- Fade-in animation on page load --- */
 @keyframes fadeIn {
   to {
     opacity: 1;
   }
 }
 
+/* Enable scroll after page fully loaded */
 body.loaded {
   overflow-y: auto;
 }
 
+/* ==========================================================
+   HEADER SECTION
+   Fixed transparent header with logo, social links, and nav
+========================================================== */
 .header {
   position: fixed;
   top: 0;
@@ -36,6 +50,7 @@ body.loaded {
   z-index: 100;
 }
 
+/* --- Social Media Icons --- */
 .social-media {
   margin: 0 auto 0 50px;
 }
@@ -66,6 +81,7 @@ body.loaded {
   color: #444;
 }
 
+/* --- Navbar Links --- */
 .navbar a {
   font-size: 18px;
   color: #fff;
@@ -80,16 +96,20 @@ body.loaded {
   text-decoration: underline;
 }
 
-/* --- Artikel Detail --- */
+/* ==========================================================
+   ARTICLE DETAIL CONTENT
+   Styles for article text, images, and metadata
+========================================================== */
 main {
   max-width: 800px;
-  margin: 140px auto 40px auto; /* jarak biar gak ketutup navbar */
+  margin: 140px auto 40px auto; /* Prevent overlap with header */
   padding: 20px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+/* --- Featured image in article --- */
 main img {
   width: 100%;
   max-height: 400px;
@@ -98,12 +118,14 @@ main img {
   margin-bottom: 20px;
 }
 
+/* --- Article title --- */
 main h1 {
   font-size: 28px;
   margin-bottom: 15px;
   color: #004d40;
 }
 
+/* --- Paragraph text --- */
 main p {
   font-size: 16px;
   margin-bottom: 15px;
@@ -111,7 +133,10 @@ main p {
   text-align: justify;
 }
 
-/* Style tombol favorit */
+/* ==========================================================
+   FAVORITE BUTTON
+   Styles for adding/removing articles from favorites
+========================================================== */
 #favBtn {
   border: none;
   padding: 10px 18px;
@@ -121,7 +146,7 @@ main p {
   font-size: 14px;
 }
 
-/* Belum difavoritkan → hijau */
+/* --- Add (not yet favorite) = Green --- */
 #favBtn.add {
   background: #2e7d32;
   color: white;
@@ -131,7 +156,7 @@ main p {
   background: #1b5e20;
 }
 
-/* Sudah difavoritkan → merah */
+/* --- Remove (already favorite) = Red --- */
 #favBtn.remove {
   background: #c62828;
   color: white;
@@ -141,7 +166,10 @@ main p {
   background: #8e0000;
 }
 
-/* Toast notification */
+/* ==========================================================
+   TOAST NOTIFICATION
+   Temporary pop-up message for favorite actions
+========================================================== */
 .toast {
   position: fixed;
   bottom: 30px;
@@ -156,21 +184,25 @@ main p {
   z-index: 9999;
 }
 
-/* Animasi muncul */
+/* --- Visible state --- */
 .toast.show {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
 
-/* Warna beda */
+/* --- Type colors --- */
 .toast.add {
-  background: #2e7d32; /* hijau */
+  background: #2e7d32; /* green */
 }
 
 .toast.remove {
-  background: #c62828; /* merah */
+  background: #c62828; /* red */
 }
 
+/* ==========================================================
+   ARTICLE META INFO
+   Displays date and city info under article title
+========================================================== */
 .article-meta {
   font-size: 14px;
   color: #777;
@@ -187,7 +219,10 @@ main p {
   font-weight: 600;
 }
 
-/* ===== HAMBURGER ===== */
+/* ==========================================================
+   HAMBURGER MENU
+   Hidden on desktop, shown on mobile
+========================================================== */
 .hamburger {
   display: none;             
   width: 40px;
@@ -210,8 +245,12 @@ main p {
   transition: all 0.3s ease;
 }
 
+/* ==========================================================
+   RESPONSIVE DESIGN (≤768px)
+   Compact layout for mobile and tablet screens
+========================================================== */
 @media (max-width: 768px) {
-  /* Header fixed dan simpel (hamburger | logo | sosmed) */
+  /* --- Simplified header layout --- */
   .header {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -237,6 +276,7 @@ main p {
     height: auto; 
   }
 
+  /* --- Compact social layout --- */
   .social-media {
     margin: 0;
     display: flex;
@@ -250,10 +290,10 @@ main p {
     height: 28px; 
   }
 
-  /* Navbar dropdown menempel di bawah header */
+  /* --- Dropdown nav below header --- */
   .navbar {
     position: fixed;
-    top: 60px;           /* kira-kira tinggi header di mobile */
+    top: 60px;
     left: 0; right: 0;
     z-index: 120;
     display: none;
@@ -262,10 +302,15 @@ main p {
     background: rgba(17,17,17,0.95);
     border-bottom: 1px solid rgba(255,255,255,0.15);
   }
+
   .navbar.open { display: flex; }
   .navbar a { margin: 10px 0; font-size: 16px; }
 }
 
+/* ==========================================================
+   EXTRA SMALL SCREENS (≤480px)
+   Adjust toast layout for narrow screens
+========================================================== */
 @media (max-width: 480px) {
   .toast {
     white-space: nowrap; 

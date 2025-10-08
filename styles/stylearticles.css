@@ -1,3 +1,7 @@
+/* ==========================================================
+   GLOBAL STYLES
+   Basic reset, font setup, and body animation
+========================================================== */
 * {
     padding: 0;
     margin: 0;
@@ -11,16 +15,22 @@ body {
   animation: fadeIn 0.7s ease forwards;
 }
 
+/* --- Fade-in animation on page load --- */
 @keyframes fadeIn {
   to {
     opacity: 1;
   }
 }
 
+/* Restore scrolling after animation completes */
 body.loaded {
   overflow-y: auto;
 }
 
+/* ==========================================================
+   HEADER SECTION
+   Fixed navigation bar containing logo, social icons, and links
+========================================================== */
 .header {
   position: fixed;
   top: 0;
@@ -33,6 +43,7 @@ body.loaded {
   z-index: 100;
 }
 
+/* --- Social media icon container --- */
 .social-media {
   margin: 0 auto 0 50px;
 }
@@ -50,6 +61,7 @@ body.loaded {
   transition: 0.5s;
 }
 
+/* Hover effect for icons */
 .social-media a:hover {
   background: #fff;
 }
@@ -63,6 +75,7 @@ body.loaded {
   color: #444;
 }
 
+/* --- Navbar links styling --- */
 .navbar a {
   font-size: 18px;
   color: #fff;
@@ -76,6 +89,10 @@ body.loaded {
   text-decoration: underline;
 }
 
+/* ==========================================================
+   ARTICLES HEADER (HERO) SECTION
+   Displays main title, search input, and filter buttons
+========================================================== */
 .articles-header {
   text-align: center;
   padding: 140px 20px 20px;
@@ -83,6 +100,7 @@ body.loaded {
   position: relative;
 }
 
+/* Overlay effect for dark background readability */
 .articles-header::before {
   content: "";
   position: absolute;
@@ -92,6 +110,7 @@ body.loaded {
   z-index: 0;
 }
 
+/* Ensure text and buttons stay above overlay */
 .articles-header h1,
 .articles-header input,
 #filterButtons {
@@ -99,12 +118,13 @@ body.loaded {
   z-index: 1;
 }
 
-
+/* --- Title --- */
 .articles-header h1 {
   margin-bottom: 15px;
   color: #fff;
 }
 
+/* --- Search input --- */
 #searchInput {
   padding: 10px;
   width: 80%;
@@ -114,6 +134,7 @@ body.loaded {
   border-radius: 6px;
 }
 
+/* --- Filter button group --- */
 #filterButtons {
   margin: 15px 0;
 }
@@ -133,11 +154,15 @@ body.loaded {
   background: #00796b;
 }
 
-/* --- Card Artikel --- */
+/* ==========================================================
+   ARTICLES GRID SECTION
+   Container for all article cards
+========================================================== */
 .articles-section {
   background: #2D3319;
 }
 
+/* --- Grid layout for article cards --- */
 main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -145,6 +170,7 @@ main {
   padding: 20px;
 }
 
+/* --- Individual article card --- */
 .article-card {
   background: white;
   border-radius: 8px;
@@ -158,6 +184,7 @@ main {
   transform: translateY(-5px);
 }
 
+/* --- Card image --- */
 .article-card img {
   width: 100%;
   height: 150px;
@@ -165,6 +192,7 @@ main {
   border-radius: 6px;
 }
 
+/* --- Card title and description --- */
 .article-card h3 {
   margin: 10px 0;
   font-size: 18px;
@@ -176,6 +204,7 @@ main {
   color: #555;
 }
 
+/* --- Favorite or detail button --- */
 .article-card button {
   margin-top: 10px;
   background: #00695c;
@@ -191,6 +220,10 @@ main {
   background: #004d40;
 }
 
+/* ==========================================================
+   ARTICLE DETAIL PAGE
+   Styling for full article view
+========================================================== */
 .article-detail {
   max-width: 800px;
   margin: 150px auto 50px;
@@ -200,6 +233,7 @@ main {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+/* --- Full article image --- */
 .article-full img {
   width: 100%;
   height: 300px;
@@ -208,12 +242,14 @@ main {
   margin-bottom: 20px;
 }
 
+/* --- Article title --- */
 .article-full h1 {
   font-size: 28px;
   margin-bottom: 10px;
   color: #004d40;
 }
 
+/* --- Article content text --- */
 .article-full p {
   font-size: 16px;
   line-height: 1.6;
@@ -221,6 +257,7 @@ main {
   color: #444;
 }
 
+/* --- Action button (e.g., favorite, share) --- */
 .article-full button {
   background: #00695c;
   color: white;
@@ -236,6 +273,7 @@ main {
   background: #004d40;
 }
 
+/* --- Back to list link --- */
 .back-btn {
   display: inline-block;
   margin-top: 20px;
@@ -249,7 +287,10 @@ main {
   text-decoration: underline;
 }
 
-/* --- Load More Button --- */
+/* ==========================================================
+   LOAD MORE BUTTON
+   Styled to match brand color scheme
+========================================================== */
 .loadMoreWrapper {
   text-align: center;
 }
@@ -258,7 +299,7 @@ main {
   padding: 12px 24px;
   font-size: 16px;
   font-weight: 500;
-  background: #00695c; /* hijau tosca gelap */
+  background: #00695c; /* dark teal */
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -270,7 +311,7 @@ main {
 }
 
 #loadMoreBtn:hover {
-  background: #004d40; /* lebih gelap saat hover */
+  background: #004d40;
   transform: translateY(-2px);
 }
 
@@ -278,7 +319,10 @@ main {
   transform: translateY(0);
 }
 
-/* Toast notification */
+/* ==========================================================
+   TOAST NOTIFICATION
+   Appears temporarily to show success/error messages
+========================================================== */
 .toast {
   position: fixed;
   bottom: 30px;
@@ -293,22 +337,25 @@ main {
   z-index: 9999;
 }
 
-/* Animasi muncul */
+/* --- Toast visible state --- */
 .toast.show {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
 
-/* Warna sesuai jenis */
+/* --- Toast colors by type --- */
 .toast.add {
-  background: #2e7d32; /* hijau */
+  background: #2e7d32; /* green */
 }
 
 .toast.remove {
-  background: #c62828; /* merah */
+  background: #c62828; /* red */
 }
 
-/* ===== HAMBURGER ===== */
+/* ==========================================================
+   HAMBURGER MENU
+   Hidden on desktop, visible on mobile
+========================================================== */
 .hamburger {
   display: none;             
   width: 40px;
@@ -331,11 +378,14 @@ main {
   transition: all 0.3s ease;
 }
 
+/* ==========================================================
+   RESPONSIVE DESIGN (≤768px)
+   Adjust layout for tablet and mobile screens
+========================================================== */
 @media (max-width: 768px) {
-  /* Header fixed dan simpel (hamburger | logo | sosmed) */
-  :root { --header-h: 100px; 
-  } /* tinggi header di mobile */
-  
+  /* --- Simplified fixed header for mobile --- */
+  :root { --header-h: 100px; }
+
   .header {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -347,10 +397,12 @@ main {
     background: rgba(0,0,0,0.35);
     backdrop-filter: blur(6px);
   }
+
   .hamburger { display: inline-flex; }
   .logo { justify-self: center; }
   .logo img { width: 160px; height: auto; }
 
+  /* --- Compact social media layout --- */
   .social-media {
     margin: 0;
     display: flex;
@@ -358,12 +410,13 @@ main {
     gap: 6px;
     justify-self: end;
   }
+
   .social-media a { width: 30px; height: 30px; }
 
-  /* Navbar dropdown menempel di bawah header */
+  /* --- Dropdown nav under header --- */
   .navbar {
     position: fixed;
-    top: 60px;           /* kira-kira tinggi header di mobile */
+    top: 60px;
     left: 0; right: 0;
     z-index: 120;
     display: none;
@@ -372,21 +425,25 @@ main {
     background: rgba(17,17,17,0.95);
     border-bottom: 1px solid rgba(255,255,255,0.15);
   }
+
   .navbar.open { display: flex; }
   .navbar a { margin: 10px 0; font-size: 16px; }
 
+  /* --- Adjust article header layout --- */
   .articles-header {
     padding: 110px 16px 16px;
     background-position: center;
   }
 
+  /* --- Grid layout for filter buttons --- */
   #filterButtons {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+    grid-template-columns: repeat(3, 1fr);
     gap: 8px;
     padding: 0 12px;
     margin: 12px 0;
   }
+
   #filterButtons button {
     width: 100%;
     margin: 0;
@@ -395,22 +452,21 @@ main {
     border-radius: 6px;
   }
 
-  /* Grid artikel: tetap 2 kolom */
+  /* --- Two-column grid for articles --- */
   main {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
     padding: 12px;
   }
 
-  /* Kartu ringkas: tampilkan gambar + judul saja */
+  /* --- Simplified cards for mobile --- */
   .article-card { padding: 10px; }
   .article-card img { height: 110px; }
   .article-card h3 { font-size: 15px; margin: 8px 0 0; }
 
-  /* Sembunyikan semua paragraf di kartu (city & preview) */
+  /* Hide preview paragraph on small screens */
   .article-card p { display: none; }
 
-  /* Tombol favorit sedikit diperkecil (kalau kamu ingin tetap tampil) */
   .article-card button {
     margin-top: 8px;
     padding: 8px 10px;
@@ -422,6 +478,10 @@ main {
   }
 }
 
+/* ==========================================================
+   EXTRA SMALL SCREENS (≤480px)
+   Toast and text adjustments for smaller width
+========================================================== */
 @media (max-width: 480px) {
   .toast {
     white-space: nowrap; 

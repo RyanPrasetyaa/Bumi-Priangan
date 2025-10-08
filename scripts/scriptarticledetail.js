@@ -1,15 +1,23 @@
-// Ambil parameter id dari URL
+// =========================================================
+// URL PARAMS & INITIAL STATE
+// Read article id from query string and setup favorites cache
+// =========================================================
 const params = new URLSearchParams(window.location.search);
 const articleId = parseInt(params.get("id"));
 
-// Ambil daftar favorit dari localStorage (array of id)
+// Favorites list stored in localStorage (array of article IDs)
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
+// Enable scrolling after initial CSS fade-in completes
 window.addEventListener("load", () => {
   document.body.classList.add("loaded");
 });
 
-// Ambil data artikel dari JSON
+// =========================================================
+// LOAD ARTICLE DATA
+// Fetch the articles JSON, find the requested article by id,
+// then render its content (inline or via external file).
+// =========================================================
 fetch("data/articles.json")
   .then((res) => res.json())
   .then((articles) => {
@@ -20,19 +28,25 @@ fetch("data/articles.json")
       return;
     }
 
-    // Fungsi untuk render artikel (bisa dipanggil ulang setelah fetch contentFile)
+    // -----------------------------------------------------
+    // renderArticle
+    // Renders the full article HTML into #articleDetail.
+    // Accepts the article's content as a string.
+    // -----------------------------------------------------
     function renderArticle(content) {
       const isFavorited = favorites.includes(article.id);
 
-      // 🔥 Pisahkan teks menjadi paragraf (split berdasarkan baris kosong)
+      // Split raw text content into paragraphs using empty lines as separators
+      // (handles double newlines or blocks with whitespace)
       const paragraphs = content
-        .split(/\n\s*\n/) // pisah per dua baris kosong
+        .split(/\n\s*\n/) // split by one or more blank lines
         .map((p) => p.trim())
         .filter((p) => p.length > 0);
 
-      // Ubah ke HTML paragraf
+      // Convert to HTML paragraphs
       const formattedContent = paragraphs.map((p) => `<p>${p}</p>`).join("");
 
+      // Inject the detail view markup (title, meta, content, favorite button, back link)
       document.getElementById("articleDetail").innerHTML = `
         <div class="article-full">
           <img src="${article.image}" alt="${article.title}" />
@@ -50,69 +64,81 @@ fetch("data/articles.json")
         </div>
       `;
 
-      // Event untuk toggle favorit
+      // Favorite button behavior: toggle state, persist to localStorage, show toast
       const favBtn = document.getElementById("favBtn");
       favBtn.addEventListener("click", () => {
         let message = "";
         let type = "";
 
         if (favorites.includes(article.id)) {
-          // Hapus dari favorit
+          // Remove from favorites
           favorites = favorites.filter((favId) => favId !== article.id);
           message = "Dihapus dari Favorit";
           type = "remove";
         } else {
-          // Tambah ke favorit
+          // Add to favorites
           favorites.push(article.id);
           message = "Ditambahkan ke Favorit";
           type = "add";
         }
 
-        // Simpan ke localStorage
+        // Persist the new list
         localStorage.setItem("favorites", JSON.stringify(favorites));
 
-        // Update tampilan tombol
+        // Reflect the new state in the button UI
         const isNowFav = favorites.includes(article.id);
         favBtn.textContent = isNowFav
           ? "Hapus dari Favorit"
           : "Tambah ke Favorit";
         favBtn.className = isNowFav ? "remove" : "add";
 
-        // Tampilkan toast
+        // Feedback toast
         showToast(message, type);
       });
     }
 
-    // 🔥 Cek apakah artikel pakai file eksternal atau langsung
+    // Decide whether to load inline content or fetch from an external file
     if (article.contentFile) {
-      // Ambil isi file .txt
+      // Load .txt (or similar) file content and render it
       fetch(article.contentFile)
         .then((res) => res.text())
         .then((text) => renderArticle(text))
         .catch(() => renderArticle("<p>Gagal memuat isi artikel.</p>"));
     } else {
-      // Kalau pakai content langsung dari JSON
+      // Render content directly from JSON
       renderArticle(article.content);
     }
   });
 
-// Fungsi toast
+// =========================================================
+// TOAST NOTIFICATION
+// Small ephemeral message that appears at the bottom center
+// to confirm user actions (e.g., add/remove favorite).
+// 'type' controls color via CSS classes: .add / .remove
+// =========================================================
 function showToast(message, type) {
   const toast = document.createElement("div");
   toast.className = `toast ${type}`;
   toast.textContent = message;
   document.body.appendChild(toast);
 
+  // Play entrance animation (slight delay to trigger CSS transition)
   setTimeout(() => {
     toast.classList.add("show");
   }, 100);
 
+  // Auto-hide after 2 seconds, then remove from DOM
   setTimeout(() => {
     toast.classList.remove("show");
     setTimeout(() => toast.remove(), 500);
   }, 2000);
 }
 
+// =========================================================
+/* MOBILE NAVIGATION TOGGLE
+   Hamburger toggles the primary nav ('open' class) and
+   keeps aria-expanded in sync for accessibility. */
+// =========================================================
 const hamburger = document.querySelector(".hamburger");
 const nav = document.getElementById("site-nav");
 
