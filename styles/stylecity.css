@@ -1,3 +1,7 @@
+/* ==========================================================
+   GLOBAL STYLES
+   Basic resets and global font configuration
+========================================================== */
 * {
     padding: 0;
     margin: 0;
@@ -11,6 +15,10 @@ body {
   line-height: 1.6;
 }
 
+/* ==========================================================
+   HEADER SECTION
+   Fixed navigation bar containing logo, social media, and nav links
+========================================================== */
 .header {
   position: fixed;
   top: 0;
@@ -23,6 +31,7 @@ body {
   z-index: 100;
 }
 
+/* --- Social Media Icons --- */
 .social-media {
   margin: 0 auto 0 50px;
 }
@@ -34,7 +43,6 @@ body {
   width: 40px;
   height: 40px;
   background: transparent;
-  /* border: 2px solid #fff; */
   border-radius: 6px;
   text-decoration: none;
   margin-right: 10px;
@@ -54,6 +62,7 @@ body {
   color: #444;
 }
 
+/* --- Navbar Links --- */
 .navbar a {
   font-size: 18px;
   color: #fff;
@@ -68,7 +77,10 @@ body {
   text-decoration: underline;
 }
 
-/* ===== CITY BANNER ===== */
+/* ==========================================================
+   CITY BANNER SECTION
+   Fullscreen banner with parallax background and overlay
+========================================================== */
 .city-banner {
   position: relative;
   width: 100%;
@@ -76,6 +88,7 @@ body {
   overflow: hidden;
 }
 
+/* --- Banner background container --- */
 .banner-wrapper {
   position: relative;
   width: 100%;
@@ -88,19 +101,21 @@ body {
   justify-content: center;
 }
 
+/* --- Dark overlay for readability --- */
 .banner-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.55); /* overlay full hitam transparan */
+  background: rgba(0, 0, 0, 0.55); /* transparent black overlay */
   display: flex;
   align-items: center;
   justify-content: center;
   animation: fadeIn 1.5s ease-in-out;
 }
 
+/* --- City title on top of banner --- */
 .banner-overlay h1 {
   color: #fff;
   font-size: 3rem;
@@ -110,13 +125,16 @@ body {
   letter-spacing: 2px;
 }
 
-/* Fade in animasi */
+/* --- Fade-in animation for overlay --- */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(40px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ===== CITY INFO ===== */
+/* ==========================================================
+   CITY INFORMATION SECTION
+   General city description and historical information
+========================================================== */
 .city-info {
   max-width: 900px;
   margin: 60px auto;
@@ -139,7 +157,10 @@ body {
   text-align: justify;
 }
 
-/* ===== CITY ARTICLES ===== */
+/* ==========================================================
+   RELATED ARTICLES SECTION
+   Displays article cards related to the selected city
+========================================================== */
 .city-articles {
   max-width: 1000px;
   margin: 60px auto;
@@ -150,12 +171,14 @@ body {
   color: #ffd369;
 }
 
+/* --- Articles grid layout --- */
 .articles-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* lebih kecil */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* smaller cards */
   gap: 20px;
 }
 
+/* --- Individual article card --- */
 .article-card {
   background: #fff;
   border-radius: 10px;
@@ -166,12 +189,12 @@ body {
 
 .article-card img {
   width: 100%;
-  height: 140px; /* lebih kecil dari sebelumnya 180px */
+  height: 140px; /* smaller than previous 180px */
   object-fit: cover;
 }
 
 .article-card-body {
-  padding: 12px; /* lebih kecil */
+  padding: 12px; /* compact spacing */
 }
 
 .article-card-body h3 {
@@ -186,16 +209,21 @@ body {
   line-height: 1.4;
 }
 
+/* --- Hover animation for article cards --- */
 .article-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
+/* --- Hide extra articles (beyond the 3rd) --- */
 .articles-list .article-card:nth-child(n+4) {
   display: none;
 }
 
-/* ===== HAMBURGER ===== */
+/* ==========================================================
+   HAMBURGER MENU
+   Shown only on smaller screens for navigation toggle
+========================================================== */
 .hamburger {
   display: none;             
   width: 40px;
@@ -218,8 +246,12 @@ body {
   transition: all 0.3s ease;
 }
 
+/* ==========================================================
+   RESPONSIVE DESIGN (≤768px)
+   Adjust layout and header for mobile and tablet view
+========================================================== */
 @media (max-width: 768px) {
-  /* Header fixed dan simpel (hamburger | logo | sosmed) */
+  /* --- Simplified fixed header for mobile --- */
   .header {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -245,6 +277,7 @@ body {
     height: auto; 
   }
 
+  /* --- Smaller social media icons stacked vertically --- */
   .social-media {
     margin: 0;
     display: flex;
@@ -258,10 +291,10 @@ body {
     height: 28px; 
   }
 
-  /* Navbar dropdown menempel di bawah header */
+  /* --- Dropdown navbar for mobile view --- */
   .navbar {
     position: fixed;
-    top: 60px;           /* kira-kira tinggi header di mobile */
+    top: 60px;           /* approximate mobile header height */
     left: 0; right: 0;
     z-index: 120;
     display: none;
@@ -270,6 +303,11 @@ body {
     background: rgba(17,17,17,0.95);
     border-bottom: 1px solid rgba(255,255,255,0.15);
   }
+
   .navbar.open { display: flex; }
-  .navbar a { margin: 10px 0; font-size: 16px; }
+
+  .navbar a { 
+    margin: 10px 0; 
+    font-size: 16px; 
+  }
 }

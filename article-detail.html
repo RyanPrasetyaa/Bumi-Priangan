@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- ==== META & PAGE SETUP ==== -->
+    <!-- Character encoding and responsive viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page title shown on the browser tab -->
     <title>Detail Artikel - Bumi Priangan</title>
+
+    <!-- ==== STYLES & FONTS ==== -->
+    <!-- Main stylesheet for the article detail page -->
     <link rel="stylesheet" href="styles/stylearticledetail.css" />
+
+    <!-- Google Font for consistent typography -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-  <link rel="icon" type="image/png" href="assets/favicon.svg"/>
+
+    <!-- Favicon (icon displayed on the browser tab) -->
+    <link rel="icon" type="image/png" href="assets/favicon.svg"/>
   </head>
+
   <body>
+    <!-- ===== HEADER SECTION ===== -->
+    <!-- Top navigation bar: hamburger (mobile), logo, social icons, and primary nav -->
     <header class="header">
-        <button class="hamburger" aria-label="Buka menu" aria-expanded="false" aria-controls="site-nav">
+      <!-- Mobile hamburger button to toggle navigation -->
+      <button class="hamburger" aria-label="Buka menu" aria-expanded="false" aria-controls="site-nav">
         <span></span><span></span><span></span>
       </button>
 
+      <!-- Site logo linking back to homepage -->
       <a href="home.html" class="logo" aria-label="Beranda Bumi Priangan">
         <img src="assets/BUMI-PRIANGAN.png" alt="BUMI PRIANGAN" width="230" />
       </a>
 
+      <!-- Social media links (icons only) -->
       <div class="social-media">
         <a href="https://heylink.me/ryanbong606/" aria-label="Instagram"><img src="assets/instagram.png" alt="Instagram" width="30" /></a>
         <a href="https://github.com/RyanPrasetyaa/Bumi-Priangan.git" aria-label="Github"><img src="assets/github.png" alt="Github" width="30" /></a>
         <a href="https://heylink.me/ryanbong606/" aria-label="Email"><img src="assets/mail.png" alt="Email" width="30" /></a>
       </div>
 
+      <!-- Primary site navigation -->
       <nav class="navbar" id="site-nav" aria-label="Navigasi utama">
         <a href="home.html">Beranda</a>
         <a href="articles.html">Artikel</a>
@@ -35,8 +53,12 @@
       </nav>
     </header>
 
+    <!-- ===== ARTICLE DETAIL MOUNT POINT ===== -->
+    <!-- Dynamic content container: filled by scriptarticledetail.js -->
     <main id="articleDetail"></main>
 
+    <!-- ===== SCRIPTS ===== -->
+    <!-- Handles fetching a single article by id and rendering the detail view -->
     <script src="scripts/scriptarticledetail.js"></script>
   </body>
 </html>
