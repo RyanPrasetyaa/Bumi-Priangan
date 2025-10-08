@@ -76,3 +76,13 @@ fetch("data/articles.json")
     cityArticles.innerHTML = "<p>Gagal memuat artikel kota</p>";
     console.error(err);
   });
+
+  const hamburger = document.querySelector(".hamburger");
+const nav = document.getElementById("site-nav");
+
+if (hamburger && nav) {
+  hamburger.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    hamburger.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+}

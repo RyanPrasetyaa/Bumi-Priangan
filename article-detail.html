@@ -12,23 +12,21 @@
   </head>
   <body>
     <header class="header">
-      <a href="home.html" class="logo">
+        <button class="hamburger" aria-label="Buka menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a href="home.html" class="logo" aria-label="Beranda Bumi Priangan">
         <img src="assets/BUMI-PRIANGAN.png" alt="BUMI PRIANGAN" width="230" />
       </a>
 
       <div class="social-media">
-        <a href="https://heylink.me/ryanbong606/"
-          ><i><img src="assets/instagram.png" alt="Instagram" width="30" /></i
-        ></a>
-        <a href="https://github.com/RyanPrasetyaa/Bumi-Priangan.git"
-          ><i><img src="assets/github.png" alt="Github" width="30" /></i
-        ></a>
-        <a href="https://heylink.me/ryanbong606/"
-          ><i><img src="assets/mail.png" alt="Email" width="30" /></i
-        ></a>
+        <a href="https://heylink.me/ryanbong606/" aria-label="Instagram"><img src="assets/instagram.png" alt="Instagram" width="30" /></a>
+        <a href="https://github.com/RyanPrasetyaa/Bumi-Priangan.git" aria-label="Github"><img src="assets/github.png" alt="Github" width="30" /></a>
+        <a href="https://heylink.me/ryanbong606/" aria-label="Email"><img src="assets/mail.png" alt="Email" width="30" /></a>
       </div>
 
-      <nav class="navbar">
+      <nav class="navbar" id="site-nav" aria-label="Navigasi utama">
         <a href="home.html">Beranda</a>
         <a href="articles.html">Artikel</a>
         <a href="about.html">Tentang</a>

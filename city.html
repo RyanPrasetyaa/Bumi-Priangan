@@ -10,22 +10,26 @@
 <body>
   <!-- ===== HEADER ===== -->
   <header class="header">
-    <a href="home.html" class="logo">
-      <img src="assets/BUMI-PRIANGAN.png" alt="BUMI PRIANGAN" width="230" />
-    </a>
+    <button class="hamburger" aria-label="Buka menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
 
-    <div class="social-media">
-      <a href="https://heylink.me/ryanbong606/"><img src="assets/instagram.png" alt="Instagram" width="30" /></a>
-      <a href="https://github.com/RyanPrasetyaa/Bumi-Priangan.git"><img src="assets/github.png" alt="Github" width="30" /></a>
-      <a href="https://heylink.me/ryanbong606/"><img src="assets/mail.png" alt="Email" width="30" /></a>
-    </div>
+      <a href="home.html" class="logo" aria-label="Beranda Bumi Priangan">
+        <img src="assets/BUMI-PRIANGAN.png" alt="BUMI PRIANGAN" width="230" />
+      </a>
 
-    <nav class="navbar">
-      <a href="home.html">Beranda</a>
-      <a href="articles.html">Artikel</a>
-      <a href="about.html">Tentang</a>
-      <a href="favorite.html">Favorit</a>
-    </nav>
+      <div class="social-media">
+        <a href="https://heylink.me/ryanbong606/" aria-label="Instagram"><img src="assets/instagram.png" alt="Instagram" width="30" /></a>
+        <a href="https://github.com/RyanPrasetyaa/Bumi-Priangan.git" aria-label="Github"><img src="assets/github.png" alt="Github" width="30" /></a>
+        <a href="https://heylink.me/ryanbong606/" aria-label="Email"><img src="assets/mail.png" alt="Email" width="30" /></a>
+      </div>
+
+      <nav class="navbar" id="site-nav" aria-label="Navigasi utama">
+        <a href="home.html">Beranda</a>
+        <a href="articles.html">Artikel</a>
+        <a href="about.html">Tentang</a>
+        <a href="favorite.html">Favorit</a>
+      </nav>
   </header>
 
   <!-- ===== KONTEN KOTA ===== -->
